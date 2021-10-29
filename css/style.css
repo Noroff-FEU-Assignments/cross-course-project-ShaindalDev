@@ -13,6 +13,7 @@ body {
   background-color: #ffffff;
   display: flex;
   height: 250px;
+  width: 100%;
   border-bottom: 3px solid #000;
 
   justify-content: space-between;
@@ -133,6 +134,7 @@ nav ul li a:hover {
   align-items: flex-end;
   display: flex;
   height: 70px;
+
   min-width: 288px;
   padding-top: 100px;
 }
@@ -233,7 +235,7 @@ nav ul li a:hover {
 .preview-products {
   display: flex;
   cursor: pointer;
-  height: 530px;
+  height: auto;
 
   justify-content: center;
   margin: 35px 25px 25px 25px;
@@ -245,11 +247,17 @@ nav ul li a:hover {
   margin: 8px;
   border: 1px solid #000;
   box-shadow: 5px 5px 10px 5px rgba(7, 7, 7, 0.75);
+  height: auto;
 }
 
 h3,
 p {
   align-self: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* footer styling goes here */
@@ -315,5 +323,46 @@ p {
 @media (orientation: portrait) {
   body {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    display: flex;
+    background-color: #594e3c;
+  }
+
+  .header {
+    align-items: flex-end;
+    background: #ffffff;
+    display: flex;
+    height: 107px;
+    padding: 21px 2px;
+  }
+
+  .rainyday-logo {
+    height: 72px;
+    object-fit: cover;
+    width: 123px;
+  }
+  /* search bar styling */
+  .search-bar {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    height: 23px;
+    min-width: 356px;
+    padding: 0.5px 6.3px;
+  }
+
+  .search-here {
+    align-self: flex-end;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 13px;
+    min-height: 19px;
+    min-width: 78px;
+    white-space: nowrap;
   }
 }

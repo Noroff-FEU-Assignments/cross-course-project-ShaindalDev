@@ -316,18 +316,6 @@ img {
   width: 38px;
 }
 
-@media (orientation: landscape) {
-  body {
-    flex-direction: row;
-  }
-}
-
-@media (orientation: portrait) {
-  body {
-    flex-direction: column;
-  }
-}
-
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
   body {
     display: flex;

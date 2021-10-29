@@ -365,4 +365,10 @@ img {
     min-width: 78px;
     white-space: nowrap;
   }
+
+  .horisontal-nav {
+    align-items: flex-start;
+    display: flex;
+    min-width: 331px;
+  }
 }

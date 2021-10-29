@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,300,200|Montserrat:500,500italic");
+
 /* body styling goes here */
 body {
   background-size: cover;
@@ -370,5 +372,160 @@ img {
     align-items: flex-start;
     display: flex;
     min-width: 331px;
+  }
+
+  /* bottom navigation on mobile */
+  .quick-nav {
+    align-items: flex-end;
+    background-color: #ffffff;
+    display: flex;
+    height: 48px;
+    justify-content: flex-end;
+    min-width: 360px;
+    padding: 0 22px;
+  }
+
+  .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2.5px;
+    min-height: 46px;
+    width: 38px;
+  }
+
+  .icon-ionic-md-home {
+    display: flex;
+    height: 25px;
+    margin-left: 4px;
+    width: 27px;
+  }
+
+  .icon-ionic-md-home-1 {
+    flex: 1;
+    margin-bottom: -0.7px;
+    margin-left: -1.9px;
+    margin-right: -1.9px;
+    margin-top: -1px;
+    object-fit: cover;
+    width: 31.21px;
+  }
+
+  .place {
+    letter-spacing: 0.12px;
+    line-height: 12px;
+    margin-top: 1px;
+    min-height: 19px;
+    white-space: nowrap;
+  }
+
+  .flex-col-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2.5px;
+    margin-left: 33px;
+    min-height: 47px;
+    width: 73px;
+  }
+
+  .icon-user-alt {
+    cursor: pointer;
+    display: flex;
+    height: 25px;
+    margin-right: 2.06px;
+    width: 27px;
+  }
+
+  .icon-user-alt-1 {
+    flex: 1;
+    margin-bottom: -0.8px;
+    margin-left: -0.8px;
+    margin-right: -0.8px;
+    margin-top: -0.8px;
+    object-fit: cover;
+    width: 28.88px;
+  }
+
+  .my-account {
+    letter-spacing: 0.12px;
+    line-height: 12px;
+    margin-top: 3px;
+    min-height: 19px;
+    min-width: 73px;
+    white-space: nowrap;
+  }
+
+  .flex-col-2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2.5px;
+    margin-left: 18px;
+    min-height: 46px;
+    width: 49px;
+  }
+
+  .icon-shopping-basket {
+    cursor: pointer;
+    display: flex;
+    height: 25px;
+    margin-right: 2.95px;
+    width: 27px;
+  }
+
+  .icon-shopping-basket-1 {
+    flex: 1;
+    margin-bottom: -0.7px;
+    margin-left: -0.8px;
+    margin-right: -0.8px;
+    margin-top: -0.8px;
+    object-fit: cover;
+    width: 28.89px;
+  }
+
+  .my-cart {
+    letter-spacing: 0.12px;
+    line-height: 12px;
+    margin-top: 1px;
+    min-height: 19px;
+    min-width: 49px;
+    white-space: nowrap;
+  }
+
+  .flex-col-3 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2.5px;
+    margin-left: 35px;
+    min-height: 46px;
+    width: 57px;
+  }
+
+  .icon-favorite {
+    display: flex;
+    height: 25px;
+    margin-right: 2.26px;
+    width: 27px;
+  }
+
+  .icon-favorite-1 {
+    flex: 1;
+    margin-bottom: -1px;
+    margin-left: -0.8px;
+    margin-right: -0.7px;
+    margin-top: -0.7px;
+    object-fit: cover;
+    width: 28.88px;
+  }
+
+  .favorites {
+    letter-spacing: 0.12px;
+    line-height: 12px;
+    margin-top: 1px;
+    min-height: 19px;
+    min-width: 57px;
+    white-space: nowrap;
   }
 }

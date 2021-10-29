@@ -328,7 +328,7 @@ img {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
   body {
     display: flex;
     background-color: #594e3c;

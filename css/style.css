@@ -2,12 +2,12 @@
 
 /* body styling goes here */
 body {
-  background-size: cover;
-  background-color: #594e3c;
+  background-color: #0a3641;
   margin: 0;
   padding: 0;
   min-width: 600px;
   max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -24,10 +24,15 @@ body {
 /* logo styling here */
 
 .rainyday-logo {
-  height: 205px;
-  width: 264px;
+  height: auto;
+  width: 100%;
   display: flex;
   padding-left: 25px;
+  justify-content: left;
+}
+
+.rainyday-logo img {
+  width: 80%;
 }
 
 #center {
@@ -42,7 +47,7 @@ body {
   border-radius: 10px;
   display: flex;
   height: 35px;
-  min-width: 735px;
+  min-width: 100%;
   padding: 9.7px 5px;
 }
 
@@ -61,7 +66,7 @@ body {
   line-height: 20px;
   margin-bottom: 3px;
   min-height: 29px;
-  min-width: 118px;
+  width: 100%;
   white-space: nowrap;
   padding: 0px 0 0 15px;
   color: #fff;
@@ -71,7 +76,7 @@ body {
 .input {
   border: none;
   padding: 0;
-  width: 750px;
+  width: 100%;
   height: 50px;
   border-radius: 10px;
   background-color: #0a3641;
@@ -102,14 +107,15 @@ input::placeholder {
   display: flex;
   justify-content: center;
   padding-right: 20px;
+  width: 100%;
 }
 
-nav ul {
+ul {
   padding-bottom: 10px;
   padding-left: 15px;
 }
 
-nav li {
+li {
   display: inline-block;
   background-color: #0a3641;
   color: #fff;
@@ -119,12 +125,12 @@ nav li {
   box-shadow: #000;
 }
 
-nav ul li a {
+ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-nav ul li a:hover {
+a:hover {
   color: #fff;
   background-color: #000;
   text-decoration: underline;
@@ -236,18 +242,21 @@ nav ul li a:hover {
 
 .preview-products {
   display: flex;
+  flex-flow: row wrap;
   cursor: pointer;
   height: auto;
-
+  width: 100%;
   justify-content: center;
-  margin: 35px 25px 25px 25px;
+  margin: 35px 0px 25px 0px;
+  position: relative;
 }
 
 .card {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   margin: 8px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   box-shadow: 5px 5px 10px 5px rgba(7, 7, 7, 0.75);
   height: auto;
 }
@@ -267,14 +276,19 @@ img {
 .footer {
   display: flex;
   justify-content: center;
-  border-top: 5px solid #000;
-  height: 250px;
+  background-color: #fff;
+  border-top: 1.5px solid #000;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 .contact-us {
   cursor: pointer;
   display: flex;
-  height: 35px;
+  height: auto;
   min-width: 340px;
   align-self: flex-end;
   margin: 0;
@@ -283,8 +297,8 @@ img {
 .about-us {
   cursor: pointer;
   display: flex;
-  height: 35px;
-  min-width: 340px;
+  height: auto;
+  min-width: 450px;
   align-self: flex-end;
   margin: 0;
 }
@@ -298,14 +312,12 @@ img {
 }
 
 .title {
-  align-self: flex-end;
+  color: #000;
   letter-spacing: 0;
   line-height: 25px;
-  margin-bottom: -7px;
-  margin-left: 3px;
+  margin: 0;
   min-height: 37px;
   min-width: 139px;
-  white-space: nowrap;
 }
 
 .icon-info-circle {
@@ -316,204 +328,29 @@ img {
   width: 38px;
 }
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
-  body {
-    display: flex;
-    background-color: #594e3c;
-  }
-
-  .header {
-    align-items: flex-end;
-    background: #ffffff;
-    display: flex;
-    height: 107px;
-    padding: 21px 2px;
-  }
-
-  .rainyday-logo {
-    height: 72px;
-    object-fit: cover;
-    width: 123px;
-  }
-  /* search bar styling */
-  .search-bar {
-    align-items: center;
-    border-radius: 10px;
-    display: flex;
-    height: 23px;
-    min-width: 356px;
-    padding: 0.5px 6.3px;
-  }
-
-  .search-here {
-    align-self: flex-end;
-    color: #ffffff;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 13px;
-    min-height: 19px;
-    min-width: 78px;
-    white-space: nowrap;
+@media (max-width: 1435px) {
+  .logo {
+    float: left;
   }
 
   .horisontal-nav {
-    align-items: flex-start;
+    display: inline-block;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  ul {
     display: flex;
-    min-width: 331px;
+    margin: 0;
   }
 
-  /* bottom navigation on mobile */
-  .quick-nav {
-    align-items: flex-end;
-    background-color: #ffffff;
-    display: flex;
-    height: 48px;
-    justify-content: flex-end;
-    min-width: 360px;
-    padding: 0 22px;
+  li {
+    display: inline-block;
   }
 
-  .flex-col {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -2.5px;
-    min-height: 46px;
-    width: 38px;
-  }
-
-  .icon-ionic-md-home {
-    display: flex;
-    height: 25px;
-    margin-left: 4px;
-    width: 27px;
-  }
-
-  .icon-ionic-md-home-1 {
-    flex: 1;
-    margin-bottom: -0.7px;
-    margin-left: -1.9px;
-    margin-right: -1.9px;
-    margin-top: -1px;
-    object-fit: cover;
-    width: 31.21px;
-  }
-
-  .place {
-    letter-spacing: 0.12px;
-    line-height: 12px;
-    margin-top: 1px;
-    min-height: 19px;
-    white-space: nowrap;
-  }
-
-  .flex-col-1 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -2.5px;
-    margin-left: 33px;
-    min-height: 47px;
-    width: 73px;
-  }
-
-  .icon-user-alt {
-    cursor: pointer;
-    display: flex;
-    height: 25px;
-    margin-right: 2.06px;
-    width: 27px;
-  }
-
-  .icon-user-alt-1 {
-    flex: 1;
-    margin-bottom: -0.8px;
-    margin-left: -0.8px;
-    margin-right: -0.8px;
-    margin-top: -0.8px;
-    object-fit: cover;
-    width: 28.88px;
-  }
-
-  .my-account {
-    letter-spacing: 0.12px;
-    line-height: 12px;
-    margin-top: 3px;
-    min-height: 19px;
-    min-width: 73px;
-    white-space: nowrap;
-  }
-
-  .flex-col-2 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -2.5px;
-    margin-left: 18px;
-    min-height: 46px;
-    width: 49px;
-  }
-
-  .icon-shopping-basket {
-    cursor: pointer;
-    display: flex;
-    height: 25px;
-    margin-right: 2.95px;
-    width: 27px;
-  }
-
-  .icon-shopping-basket-1 {
-    flex: 1;
-    margin-bottom: -0.7px;
-    margin-left: -0.8px;
-    margin-right: -0.8px;
-    margin-top: -0.8px;
-    object-fit: cover;
-    width: 28.89px;
-  }
-
-  .my-cart {
-    letter-spacing: 0.12px;
-    line-height: 12px;
-    margin-top: 1px;
-    min-height: 19px;
-    min-width: 49px;
-    white-space: nowrap;
-  }
-
-  .flex-col-3 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -2.5px;
-    margin-left: 35px;
-    min-height: 46px;
-    width: 57px;
-  }
-
-  .icon-favorite {
-    display: flex;
-    height: 25px;
-    margin-right: 2.26px;
-    width: 27px;
-  }
-
-  .icon-favorite-1 {
-    flex: 1;
-    margin-bottom: -1px;
-    margin-left: -0.8px;
-    margin-right: -0.7px;
-    margin-top: -0.7px;
-    object-fit: cover;
-    width: 28.88px;
-  }
-
-  .favorites {
-    letter-spacing: 0.12px;
-    line-height: 12px;
-    margin-top: 1px;
-    min-height: 19px;
-    min-width: 57px;
-    white-space: nowrap;
+  nav a {
+    padding: 0.5% 5px;
   }
 }

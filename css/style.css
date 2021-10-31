@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 /* body styling goes here */
-
 html,
 body {
   display: flex;
@@ -28,7 +27,6 @@ body {
 }
 
 /* logo styling here */
-
 .logo-desktop {
   display: flex;
   align-items: flex-start;
@@ -50,7 +48,6 @@ body {
 }
 
 /* search bar styling here */
-
 .search-container {
   display: flex;
   align-items: center;
@@ -111,7 +108,6 @@ input::placeholder {
 }
 
 /* menu and nav styling */
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -201,12 +197,13 @@ main {
   overflow-y: auto;
   height: 0px;
 }
+
 .preview-products {
   display: flex;
   flex-flow: row wrap;
   cursor: pointer;
   justify-content: center;
-  margin: 5rem 0rem 1.5625rem 0rem;
+  /* margin: 5rem 0rem 1.5625rem 0rem; */
   gap: 1rem;
 }
 
@@ -214,7 +211,6 @@ main {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
   border: 0.125rem solid #000;
   box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
   padding-bottom: 2.5rem;
@@ -243,14 +239,13 @@ p {
 }
 
 /* footer styling goes here */
-
 .footer {
   display: flex;
   justify-content: center;
   background-color: #fff;
   border-top: 0.0625rem solid #000;
   align-items: center;
-  height: 7vh;
+  height: 10vh;
 }
 
 .bob {
@@ -277,10 +272,16 @@ p {
 }
 
 /* diffrent screen sizes styling goes here */
-
 @media (max-width: 1050px) {
   body {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer {
+    display: flex;
+    height: 10vh;
   }
 
   .horisontal-nav,
@@ -289,6 +290,7 @@ p {
   .mobile-hide {
     display: none;
   }
+
   .logo-mobile,
   .mobile-nav,
   .desktop-hide {
@@ -297,15 +299,14 @@ p {
   .header {
     flex-direction: column;
   }
+
   .container-fluid {
     width: 80%;
-    padding: 2rem;
+    padding: 1rem 0;
   }
 
   .preview-products {
-    padding: 1rem;
-    flex-direction: column;
-    padding-bottom: 5rem;
+    padding: 1rem 0;
     align-items: center;
   }
 

@@ -1,31 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,300,200|Montserrat:500,500italic");
-/* body styling goes here */
 
-body {
-  background-color: #0a3641;
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  box-sizing: border-box;
+}
+/* body styling goes here */
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a3641;
+  width: 100vw;
+  height: 100vh;
   font-family: Poppins;
+  overflow: hidden;
 }
 
 .header {
   background-color: #ffffff;
   display: flex;
-  border-bottom: 3px solid #000;
-  justify-content: space-between;
+  border-bottom: 0.1875rem solid #000;
+  justify-content: space-around;
   align-items: center;
+  max-width: 100vw;
 }
 
 /* logo styling here */
 
 .logo-desktop {
-  height: auto;
-  width: 100%;
   display: flex;
-  padding-left: 25px;
-  justify-content: left;
+  align-items: flex-start;
 }
 
 .logo-mobile {
@@ -33,9 +39,10 @@ body {
 }
 
 .container-fluid {
-  width: 100%;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-container {
@@ -56,19 +63,19 @@ body {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
-  min-height: 25px;
-  width: 31px;
+  min-height: 1.8rem;
+  width: 1.9rem;
   justify-content: space-around;
 }
 
 .search-here {
   letter-spacing: 0;
-  line-height: 20px;
-  margin-bottom: 3px;
-  min-height: 29px;
+  line-height: 0.075rem;
+  margin-bottom: 0.1rem;
+  min-height: 2rem;
   width: 100%;
   white-space: nowrap;
-  padding: 0px 0 0 15px;
+  padding: 0rem 0 0 1rem;
   color: #fff;
   display: flex;
 }
@@ -77,8 +84,8 @@ body {
   border: none;
   padding: 0;
   width: 100%;
-  height: 50px;
-  border-radius: 10px;
+  height: 3rem;
+  border-radius: 0.9rem;
   background-color: #0a3641;
   color: #fff;
   outline: none;
@@ -90,14 +97,14 @@ input::placeholder {
 
 .searchbtn {
   background: #0a3641;
-  border-radius: 5px;
+  border-radius: 2rem;
   position: relative;
   cursor: pointer;
 }
 
 .searchbtn .fas {
   position: absolute;
-  font-size: 25px;
+  font-size: 1.5rem;
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
@@ -111,7 +118,7 @@ input::placeholder {
 }
 
 .menu ul {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   padding: 0;
   display: -webkit-box;
   display: -moz-box;
@@ -145,13 +152,13 @@ input::placeholder {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-right: 2rem;
+  gap: 0.0625rem;
 }
 
 .nav-secondary li {
   padding: 1em;
   margin: 0.3em;
-  max-height: 20px;
+  max-height: 1rem;
   color: #fff;
   border-radius: 0.5em;
   background-color: #0a3641;
@@ -166,7 +173,7 @@ input::placeholder {
 }
 
 .mobile-hide {
-  display: none;
+  display: flex;
 }
 
 .desktop-hide {
@@ -174,24 +181,27 @@ input::placeholder {
 }
 
 /* main content styling goes here */
-
+main {
+  flex: 1 0 auto;
+  overflow-y: auto;
+  height: 0px;
+}
 .preview-products {
   display: flex;
   flex-flow: row wrap;
   cursor: pointer;
   justify-content: center;
-  margin: 35px 0px 25px 0px;
-  position: relative;
+  margin: 2.1875rem 0rem 1.5625rem 0rem;
 }
 
 .card {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin: 8px;
-  border: 2px solid #000;
-  box-shadow: 5px 5px 10px 5px rgba(7, 7, 7, 0.75);
-  height: auto;
+  margin: 0.5rem;
+  border: 0.125rem solid #000;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
+  padding-bottom: 2.5rem;
 }
 
 .card h3,
@@ -202,14 +212,19 @@ p {
 /* footer styling goes here */
 
 .footer {
-  width: 100%;
-  position: fixed;
+  display: flex;
+  justify-content: center;
   background-color: #fff;
-  border-top: 1px solid #000;
-  bottom: 0px;
+  border-top: 0.0625rem solid #000;
+  height: 10vh;
 }
 
-/* Diffrent screen sizes styling goes here */
+.contact-us,
+.about-us {
+  display: flex;
+}
+
+/* diffrent screen sizes styling goes here */
 
 @media (max-width: 768px) {
   .horisontal-nav,

@@ -1,0 +1,24 @@
+.basket-container {
+    display: flex;
+    flex-flow: row wrap;
+    cursor: pointer;
+    justify-content: center;
+    margin: 1.5rem 0rem 1.5625rem 0rem;
+    width: 70%;
+}
+
+.shopping-cart {
+    margin: auto;
+    width: 50%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid #000;
+}
+
+.items {
+    display: flex;
+    background-color: violet;
+    border-radius: 0.5rem;
+}

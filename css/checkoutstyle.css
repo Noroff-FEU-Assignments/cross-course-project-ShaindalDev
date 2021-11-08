@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:500,400,300,200|Montserrat:500,500italic");
+
+/* CSS variables goes here */
+
 :root {
     --main-bluecolor: #0a3641;
     --main-whitecolor: #ffffff;
@@ -217,7 +220,17 @@ main {
     height: 0px;
 }
 
-.preview-products {
+.leftside {
+    background: #030303;
+    width: 25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.preview-container {
     display: flex;
     flex-flow: row wrap;
     cursor: pointer;
@@ -240,44 +253,71 @@ p {
     align-self: center;
 }
 
-.buy {
-    background-color: var(--main-bluecolor);
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    max-height: 1rem;
-    color: #fff;
-    border-radius: 0.5em;
-    border: none;
-    align-self: center;
+.payment-info {
+    background-color: #ffffff;
+    width: 35rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
 }
 
-.buy:hover {
-    color: #fff;
-    background-color: #000;
-}
-
-.add-to-cart,
-.d-none {
-    display: none;
-}
-
-label:hover {
-    cursor: pointer;
-}
-
-.d-none {
-    border: 1px solid #fff;
-    position: relative;
-    right: 10px;
-    padding: 10px;
-    background-color: var(--main-bluecolor);
-    color: var(--main-whitecolor)
-}
-
-.add-to-cart:checked~.d-none {
+p {
     display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
 }
+
+.inputbox {
+    color: #030303;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.expcvv {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text {
+    padding-right: 1rem;
+}
+
+.expcvv_text2 {
+    padding: 0 1rem;
+}
+
+.button {
+    background: linear-gradient( 135deg, #753370 0%, #298096 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 100%;
+    letter-spacing: .11rem;
+    outline: none;
+}
+
+.button:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+
+/* footer styling goes here */
 
 .footer {
     display: flex;

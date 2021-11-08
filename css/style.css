@@ -33,13 +33,16 @@ body {
 
 /* logo styling here */
 .logo-desktop {
-  width: 10rem;
   display: flex;
   align-items: flex-start;
 }
 
 .logo-mobile {
   display: none;
+}
+
+.logo-sm {
+  width: 10rem;
 }
 
 .container-fluid {
@@ -344,7 +347,6 @@ label:hover {
   }
 
   .menu ul {
-    z-index: 1000;
     margin-top: 0.1rem;
     display: block;
     max-height: 0;

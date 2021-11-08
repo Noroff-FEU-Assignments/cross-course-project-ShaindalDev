@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,300,200|Montserrat:500,500italic");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --main-bluecolor: #0a3641;
+  --main-whitecolor: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +16,7 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  background-color: #0a3641;
+  background-color: var(--main-bluecolor);
   width: 100vw;
   height: 100vh;
   font-family: Poppins;
@@ -18,7 +24,7 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--main-whitecolor);
   display: flex;
   border-bottom: 0.12rem solid #000;
   justify-content: space-around;
@@ -51,7 +57,7 @@ body {
 .search-container {
   display: flex;
   align-items: center;
-  background-color: #0a3641;
+  background-color: var(--main-bluecolor);
   border-radius: 0.5rem;
 }
 
@@ -83,7 +89,7 @@ body {
   width: 100%;
   height: 1.85rem;
   border-radius: 0.9rem;
-  background-color: #0a3641;
+  background-color: var(--main-bluecolor);
   color: #fff;
   outline: none;
 }
@@ -93,7 +99,7 @@ input::placeholder {
 }
 
 .searchbtn {
-  background: #0a3641;
+  background: var(--main-bluecolor);
   border-radius: 2rem;
   position: relative;
   cursor: pointer;
@@ -134,7 +140,7 @@ input::placeholder {
 .menu ul a:hover {
   color: #fff;
   border-radius: 0.5rem;
-  background-color: #0a3641;
+  background-color: var(--main-bluecolor);
 }
 
 #menuToggle {
@@ -164,7 +170,7 @@ input::placeholder {
   max-height: 1rem;
   color: #fff;
   border-radius: 0.5em;
-  background-color: #0a3641;
+  background-color: var(--main-bluecolor);
 }
 
 .nav-secondary li a {
@@ -221,8 +227,8 @@ p {
   align-self: center;
 }
 
-.buy {
-  background-color: #0a3641;
+.buy-btn {
+  background-color: var(--main-bluecolor);
   display: flex;
   align-items: center;
   padding: 1em;
@@ -233,9 +239,31 @@ p {
   align-self: center;
 }
 
-.buy:hover {
+.buy-btn:hover {
   color: #fff;
   background-color: #000;
+}
+
+#buy,
+.cart {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.cart {
+  border: 1px solid #fff;
+  position: fixed;
+  right: 10px;
+  padding: 10px;
+  background-color: var(--main-bluecolor);
+  color: #fff;
+}
+
+#buy:checked ~ .cart {
+  display: block;
 }
 
 /* footer styling goes here */
@@ -261,7 +289,7 @@ p {
 
 .contact-us,
 .about-us h4 {
-  color: #0a3641;
+  color: var(--main-bluecolor);
   text-decoration: underline;
 }
 
@@ -327,7 +355,7 @@ p {
     -ms-transition: max-height 0.3s;
     -o-transition: max-height 0.3s;
     transition: max-height 0.3s;
-    background-color: #0a3641;
+    background-color: var(--main-bluecolor);
     border-radius: 0.5rem;
     position: absolute;
     top: 50px;
@@ -418,7 +446,7 @@ p {
     -ms-transition: max-height 0.3s;
     -o-transition: max-height 0.3s;
     transition: max-height 0.3s;
-    background-color: #0a3641;
+    background-color: var(--main-bluecolor);
     border-radius: 0.5rem;
     position: absolute;
     top: 50px;

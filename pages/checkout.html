@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Warm and waterproof womens jacket, theese jackets will keep you warm and dry.">
-    <link href="../css/checkoutstyle.css" rel="stylesheet">
+    <link href="../css/checkoutstyle.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/mediaqueries.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/0dc149767b.js" crossorigin="anonymous"></script>
     <title>Rainydays | Checkout</title>
 </head>
@@ -98,10 +100,10 @@
                         <p>Cardholder Name</p>
                         <input type="text" class="inputbox" name="name" required />
                         <p>Card Number</p>
-                        <input type="number" class="inputbox" name="card_number" id="card_number" required />
+                        <input type="number" class="inputbox" name="card-number" id="card-number" required />
 
                         <p>Card Type</p>
-                        <select class="inputbox" name="card_type" id="card_type" required>
+                        <select class="inputbox" name="card-type" id="card-type" required>
 						<option value="">--Select a Card Type--</option>
 						<option value="Visa">Visa</option>
 						<option value="MasterCard">MasterCard</option>
@@ -109,10 +111,10 @@
                         <div class="expire-cvc">
 
                             <p class="exp-text">Expiry</p>
-                            <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+                            <input type="date" class="inputbox" name="exp-date" id="exp-date" required />
 
                             <p class="cvc-text">CVC</p>
-                            <input type="password" class="inputbox" name="cvc" id="cvc" required />
+                            <input type="password" class="inputbox cvc" name="cvc" id="cvc" required />
                         </div>
                         <p></p>
                         <button type="submit" class="button">CheckOut</button>

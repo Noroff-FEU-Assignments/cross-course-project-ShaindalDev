@@ -235,7 +235,8 @@ main {
     padding-bottom: 2.5rem;
 }
 
-.card h3,
+.card,
+h3,
 p {
     align-self: center;
 }

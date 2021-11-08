@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,300,200|Montserrat:500,500italic");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,400,300,200|Montserrat:500,500italic");
 
 :root {
   --main-bluecolor: #0a3641;
@@ -34,6 +33,7 @@ body {
 
 /* logo styling here */
 .logo-desktop {
+  width: 10rem;
   display: flex;
   align-items: flex-start;
 }
@@ -371,12 +371,12 @@ label:hover {
     padding: 1rem;
   }
   .menu-icon {
-    width: 100px;
+    width: 2.5rem;
     height: inherit;
     display: block;
     position: absolute;
     top: 10px;
-    right: -60px;
+    right: 0;
     cursor: pointer;
   }
   #menuToggle:checked ~ ul {
@@ -462,12 +462,12 @@ label:hover {
     padding: 1rem;
   }
   .menu-icon {
-    width: 100px;
+    width: 2.5rem;
     height: inherit;
     display: block;
     position: absolute;
     top: 10px;
-    right: -60px;
+    right: 0;
     cursor: pointer;
   }
   #menuToggle:checked ~ ul {

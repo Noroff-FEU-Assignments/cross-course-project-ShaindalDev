@@ -1,102 +1,89 @@
 /* main content styling goes here */
-
-main {
-    flex: 1 0 auto;
-    overflow-y: auto;
-    height: 0px;
-}
-
 .container {
-    display: flex;
-    flex-flow: row wrap;
-    cursor: pointer;
-    justify-content: center;
-    margin: 1.5rem 0rem 1.5625rem 0rem;
-    gap: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  cursor: pointer;
+  justify-content: center;
+  margin: 1.5rem 0rem 1.5625rem 0rem;
+  gap: 2rem;
 }
 
 .left-side {
-    background-color: var(--main-whitecolor);
-    font-size: xxx-large;
-    width: 25rem;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
-    color: #000
+  background-color: var(--main-whitecolor);
+  font-size: xxx-large;
+  width: 25rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
+  color: var(--main-black);
 }
 
 .right-side {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    border: 0.125rem solid #000;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
-    padding-bottom: 2.5rem;
-    max-width: 100%;
+  background-color: var(--main-whitecolor);
+  display: flex;
+  flex-direction: column;
+  border: 0.125rem solid var(--main-black);
+  box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
+  padding-bottom: 2.5rem;
+  max-width: 100%;
 }
 
 .payment-info {
-    background-color: #ffffff;
-    border-bottom-right-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    padding: 1rem 2rem 3rem 3rem;
-    max-width: 100%;
-}
-
-p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: .8rem 0;
+  background-color: var(--main-whitecolor) fff;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1rem 2rem 3rem 3rem;
+  max-width: 100%;
 }
 
 .inputbox {
-    color: #000;
-    max-width: 100%;
-    padding: 0.5rem;
-    border: none;
-    border-bottom: 0.15rem solid #ccc;
-    margin-bottom: 1.5rem;
-    border-radius: 0.5rem;
-    font-family: 'poppins', sans-serif;
-    color: #818080d0;
-    font-size: 1.1rem;
-    font-weight: 500;
-    outline: none;
+  color: var(--main-black);
+  max-width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 0.15rem solid #ccc;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "poppins", sans-serif;
+  color: #818080d0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
 }
 
 .expire-cvc {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.6rem;
 }
 
 .exp-text {
-    padding-right: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .cvc-text {
-    padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .cvc {
-    width: 4rem;
+  width: 4rem;
 }
 
 .button {
-    background: linear-gradient( 135deg, #0a3641 5%, #298096 90%);
-    padding: 15px;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-top: 10px;
-    width: 100%;
-    letter-spacing: .11rem;
-    outline: none;
+  background: linear-gradient(135deg, #0a3641 5%, #298096 90%);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 100%;
+  letter-spacing: 0.11rem;
+  outline: none;
 }
 
 .button:hover {
-    transform: scale(1.05) translateY(-3px);
-    box-shadow: 3px 3px 6px #38373785;
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 3px 3px 6px #38373785;
 }

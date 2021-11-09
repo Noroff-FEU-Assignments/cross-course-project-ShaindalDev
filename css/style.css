@@ -68,6 +68,7 @@ label:hover {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 1rem;
 }
 .nav-container {
   display: block;
@@ -170,7 +171,7 @@ input::placeholder {
 }
 
 .quick-nav {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .nav-secondary {

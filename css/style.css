@@ -135,7 +135,6 @@ input::placeholder {
 }
 
 /* menu and nav styling */
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -213,7 +212,6 @@ input::placeholder {
 }
 
 /* main content styling goes here */
-
 .preview-products {
   display: flex;
   flex-flow: row wrap;
@@ -221,6 +219,7 @@ input::placeholder {
   justify-content: center;
   margin: 1.5rem 0rem 1.5625rem 0rem;
   gap: 1rem;
+  max-width: 100%;
 }
 
 .card {
@@ -251,6 +250,15 @@ input::placeholder {
   transform: scale(1.05) translateY(-3px);
   box-shadow: 3px 3px 6px #38373785;
   cursor: pointer;
+}
+.more-info {
+  border: none;
+  background: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.show {
+  color: var(--main-black);
 }
 /* footer styling goes here */
 

@@ -1,0 +1,41 @@
+#add-to-cart, .cart {
+	display: none;
+  }
+  
+  label:hover {
+	cursor: pointer;
+  }
+  
+  .cart {
+	border: 1px solid var(--main-black);
+	position:static;
+	right: 10px;
+	padding: 10px;
+	margin-top: 0.9rem;
+	background: var(--main-grey);
+  }
+  
+  #add-to-cart:checked ~ .cart {
+	display: block;
+  }
+.buy-btn{
+  background: linear-gradient(135deg, #0a3641 5%, #298096 90%);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 14rem;
+  letter-spacing: 0.11rem;
+  outline: none;
+  transition: 0.2s;
+  box-shadow: 3px 3px 6px #38373785;
+  text-align: center;
+}
+.button:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 3px 3px 6px #38373785;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.contact-header {
+	flex-direction: column;
+}
+
+.both-container {
+	display: flex;
+	background-color: white;
+}
+.contact-us-container{
+	display: flex;
+	background-color: blue;
+}
+
+.about-us-container{
+	display: flex;
+	background-color: red;
+}

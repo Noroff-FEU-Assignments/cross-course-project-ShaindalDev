@@ -254,7 +254,7 @@ input::placeholder {
   background-color: var(--main-whitecolor);
   border-top: 0.0625rem solid var(--main-black);
   align-items: center;
-  height: 20vh;
+  height: 10vh;
 }
 
 .bob {

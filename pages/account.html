@@ -8,7 +8,7 @@
       name="description"
       content="Warm and waterproof womens jacket, theese jackets will keep you warm and dry."
     />
-    <link href="../css/checkoutstyle.css" rel="stylesheet" />
+    <link href="../css/account.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/mediaqueries.css" rel="stylesheet" />
     <script
@@ -93,145 +93,30 @@
     </header>
     <main>
       <section class="preview-products">
-        <div class="card">
-          <img
-            src="../products/jacket1-FP.png"
-            alt="waterproof Soft-Shell jacket"
-          />
-          <h3>Soft-Shell Jacket</h3>
-          <p>Made using fully waterproof</p>
-          <p>Gore tex Shield® outer fabric</p>
-          <p>$275</p>
-          <label class="buy" for="add-to-cart">Buy</label>
-          <input type="checkbox" class="add-to-cart" />
-          <section class="d-none">
-            <h3>Soft-Shell Jacket</h3>
-            <p>waterproof Gore Tex® jacket</p>
-            <p>$275</p>
-            <a href="checkout.html">Go to checkout</a>
-          </section>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket2-FP.png"
-            alt="waterproof Exploring jacket"
-          />
-          <h3>Exploring jacket</h3>
-          <p>
-            Made using fully waterproof <br />
-            Gore tex Shield® outer fabric
-          </p>
-          <p>$299</p>
-          <button class="buy">Buy</button>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket3-FP.png"
-            alt="waterproof Hicking jacket"
-          />
-          <h3>Hicking-jacket</h3>
-          <p>
-            Made using fully waterproof <br />
-            Gore tex Shield® outer fabric
-          </p>
-          <p>$199</p>
-          <button class="buy">Buy</button>
-        </div>
-        <div class="card">
-          <img src="../products/jacket4-FP.png" alt="waterproof rain jacket" />
-          <h3>Outdoors Jacket</h3>
-          <p>
-            Made using fully waterproof <br />
-            Gore tex Shield® outer fabric
-          </p>
-          <p>$250</p>
-          <button class="buy">Buy</button>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket5-FP.png"
-            alt="waterproof Skiing jacket"
-          />
-          <h3>skiing Jacket</h3>
-          <p>
-            Made using fully waterproof <br />
-            Gore tex Shield® outer fabric
-          </p>
-          <p>$350</p>
-          <button class="buy">Buy</button>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket1-FP.png"
-            alt="waterproof Soft-Shell jacket"
-          />
-          <h3>Soft-Shell Jacket</h3>
-          <p>Made using fully waterproof</p>
-          <p>Gore tex Shield® outer fabric</p>
-          <p>$275</p>
-          <label class="buy" for="add-to-cart">Buy</label>
-          <input type="checkbox" class="add-to-cart" />
-          <section class="d-none">
-            <h3>Soft-Shell Jacket</h3>
-            <p>waterproof Gore Tex® jacket</p>
-            <p>$275</p>
-            <a href="checkout.html">Go to checkout</a>
-          </section>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket8-FP.jpg"
-            alt="waterproof Soft-Shell jacket"
-          />
-          <h3>Soft-Shell Jacket</h3>
-          <p>Made using fully waterproof</p>
-          <p>Gore tex Shield® outer fabric</p>
-          <p>$275</p>
-          <label class="buy" for="add-to-cart">Buy</label>
-          <input type="checkbox" class="add-to-cart" />
-          <section class="d-none">
-            <h3>Soft-Shell Jacket</h3>
-            <p>waterproof Gore Tex® jacket</p>
-            <p>$275</p>
-            <a href="checkout.html">Go to checkout</a>
-          </section>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket7-FP.jpg"
-            alt="waterproof Soft-Shell jacket"
-          />
-          <h3>Soft-Shell Jacket</h3>
-          <p>Made using fully waterproof</p>
-          <p>Gore tex Shield® outer fabric</p>
-          <p>$275</p>
-          <label class="buy" for="add-to-cart">Buy</label>
-          <input type="checkbox" class="add-to-cart" />
-          <section class="d-none">
-            <h3>Soft-Shell Jacket</h3>
-            <p>waterproof Gore Tex® jacket</p>
-            <p>$275</p>
-            <a href="checkout.html">Go to checkout</a>
-          </section>
-        </div>
-        <div class="card">
-          <img
-            src="../products/jacket6-FP.png"
-            alt="waterproof Soft-Shell jacket"
-          />
-          <h3>Soft-Shell Jacket</h3>
-          <p>Made using fully waterproof</p>
-          <p>Gore tex Shield® outer fabric</p>
-          <p>$275</p>
-          <label class="buy" for="add-to-cart">Buy</label>
-          <input type="checkbox" class="add-to-cart" />
-          <section class="d-none">
-            <h3>Soft-Shell Jacket</h3>
-            <p>waterproof Gore Tex® jacket</p>
-            <p>$275</p>
-            <a href="checkout.html">Go to checkout</a>
-          </section>
-        </div>
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        
       </section>
     </main>
     <footer class="footer">

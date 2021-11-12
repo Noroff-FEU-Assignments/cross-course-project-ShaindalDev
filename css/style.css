@@ -59,6 +59,9 @@ label:hover {
 .logo-mobile {
   display: none;
 }
+.logo-lg {
+  width: 12rem;
+}
 .logo-sm {
   width: 10rem;
 }

@@ -38,9 +38,7 @@ a {
   text-decoration: none;
   color: var(--main-whitecolor)
 }
-a:visited {
-  color: none;
-}
+
 label:hover {
   cursor: pointer;
 }

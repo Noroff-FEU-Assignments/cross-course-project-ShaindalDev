@@ -17,6 +17,8 @@
 	padding: 1rem 0.25rem 1rem 0.25rem;
 	align-items: center;
 	background: var(--main-grey);
+	border-radius: 0.5rem;
+	box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
 }
 
 .about-us-container{
@@ -24,7 +26,8 @@
 	flex-direction: column;
 	background-color: var(--main-grey);
 	margin-bottom: 2rem;
-	border-radius: 10px;
+	border-radius: 0.5rem;
+	box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
 	
 }
 .heading-about {

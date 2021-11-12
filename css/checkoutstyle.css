@@ -11,11 +11,11 @@
 .left-side {
   background-color: var(--main-whitecolor);
   font-size: xxx-large;
-  max-width: 100%;
   align-items: center;
   justify-content: center;
   box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
   color: var(--main-black);
+  max-height: 14rem;
 }
 .thank-you {
   display: flex;
@@ -34,9 +34,6 @@
   padding-bottom: 2.5rem;
   max-width: 100%;
 }
-
-
-
 .payment-info {
   background-color: var(--main-whitecolor) fff;
   border-bottom-right-radius: 1.5rem;
@@ -78,21 +75,3 @@
   width: 4rem;
 }
 
-.button {
-  background: linear-gradient(135deg, #0a3641 5%, #298096 90%);
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
-  color: white;
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-top: 10px;
-  width: 100%;
-  letter-spacing: 0.11rem;
-  outline: none;
-}
-
-.button:hover {
-  transform: scale(1.05) translateY(-3px);
-  box-shadow: 3px 3px 6px #38373785;
-}

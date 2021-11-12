@@ -40,7 +40,7 @@
 	opacity: 0.8;
   }
   
-  /* Add padding to containers */
+  /* styling for containers */
   .container {
 	padding: 1rem;
 	background: var(--main-whitecolor);
@@ -52,7 +52,7 @@
 	border-radius: 0 0 0.5rem 0.5rem;
   }
   
-  /* The "Forgot password" text */
+  /* forgot password text */
   span.psw {
 	float: right;
 	padding-top: 16px;
@@ -60,15 +60,4 @@
   .password {
 	  color: var(--main-black);
 	  text-decoration: underline;
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-	span.psw {
-	  display: block;
-	  float: none;
-	}
-	.cancelbtn {
-	  width: 100%;
-	}
   }

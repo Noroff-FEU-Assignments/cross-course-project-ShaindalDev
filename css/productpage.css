@@ -1,3 +1,21 @@
+.jacket-preview {
+	display: flex;
+	flex-flow: row wrap;
+	cursor: pointer;
+	justify-content: center;
+	margin: 1.5rem 0rem 1.5625rem 0rem;
+	gap: 1rem;
+	max-width: 100%;
+}
+
+.jacket-card {
+	background-color: var(--main-whitecolor);
+  display: flex;
+  flex-direction: column;
+  border: 0.125rem solid var(--main-black);
+  box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
+  padding-bottom: 2rem;
+}
 #add-to-cart, .cart {
 	display: none;
   }

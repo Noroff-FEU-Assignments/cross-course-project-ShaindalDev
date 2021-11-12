@@ -85,6 +85,9 @@
     .checkout-btn {
         margin-left: 2rem;
     }
+    .outlet-header-text {
+        max-width: 18rem;
+    }
 }
 @media (max-width: 1050px) {
     body {

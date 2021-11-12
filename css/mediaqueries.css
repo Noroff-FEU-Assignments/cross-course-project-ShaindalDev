@@ -88,6 +88,15 @@
     .outlet-header-text {
         max-width: 18rem;
     }
+    .both-container {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 800px){
+    .both-container {
+        max-width: 30rem;
+    }
 }
 @media (max-width: 1050px) {
     body {

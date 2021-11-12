@@ -1,0 +1,45 @@
+.contact-header {
+	flex-direction: column;
+	color: var(--main-whitecolor);
+}
+
+.both-container {
+	display: flex;
+	margin-top: 2rem;
+	flex-direction: column;
+	max-width: 50rem;
+	gap: 2rem;
+}
+.contact-us-container{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-whitecolor);
+	padding: 1rem 0.25rem 1rem 0.25rem;
+	align-items: center;
+	background: var(--main-grey);
+}
+
+.about-us-container{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-grey);
+	margin-bottom: 2rem;
+	
+}
+.heading-about {
+	text-align: center;
+	color: var(--main-whitecolor);
+}
+.textarea-container {
+	width: 100%;
+}
+.textarea {
+	border: 0;
+    padding: 0.5 rem;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 0px 7px rgb(0 0 0 / 50%);
+}
+
+

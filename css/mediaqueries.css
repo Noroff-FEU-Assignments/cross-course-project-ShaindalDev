@@ -1,0 +1,204 @@
+/* diffrent screen sizes styling goes here */
+
+@media only screen and (max-width: 595px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        display: flex;
+        height: 10vh;
+    }
+    .horisontal-nav,
+    .quick-nav,
+    .logo-desktop,
+    .mobile-hide {
+        display: none;
+    }
+    .logo-mobile,
+    .mobile-nav,
+    .desktop-hide {
+        display: block;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .container-fluid {
+        width: 80%;
+        padding: 1rem 0;
+    }
+    .preview-products {
+        padding: 1rem 0;
+        align-items: center;
+    }
+    .card {
+        width: 70%;
+        display: flex;
+    }
+    .menu ul {
+        margin-top: 0.1rem;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        list-style-type: none;
+        -webkit-transition: max-height 0.3s;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+        background-color: var(--main-bluecolor);
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 50%;
+        box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.7);
+    }
+    .menu ul a {
+        display: block;
+        text-align: left;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .menu-icon {
+        width: 2.5rem;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        cursor: pointer;
+    }
+    #menuToggle:checked~ul {
+        max-height: 350px;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .mobile-nav {
+        margin-bottom: 4rem;
+    }
+    .basketcontainer {
+        margin: 0 1rem 0 1rem;
+    }
+    .checkout-btn {
+        margin-left: 2rem;
+    }
+    .outlet-header-text {
+        max-width: 18rem;
+    }
+    .both-container {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 800px){
+    .both-container {
+        max-width: 30rem;
+    }
+}
+@media (max-width: 1050px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        display: flex;
+        height: 10vh;
+    }
+    .horisontal-nav,
+    .quick-nav,
+    .logo-desktop,
+    .mobile-hide {
+        display: none;
+    }
+    .logo-mobile,
+    .mobile-nav,
+    .desktop-hide {
+        display: block;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .container-fluid {
+        width: 80%;
+        padding: 1rem 0;
+    }
+    .preview-products {
+        padding: 1rem 0;
+        align-items: center;
+    }
+    .card {
+        width: 70%;
+        display: flex;
+    }
+    .menu ul {
+        z-index: 1000;
+        margin-top: 0.1rem;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        list-style-type: none;
+        -webkit-transition: max-height 0.3s;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+        background-color: var(--main-bluecolor);
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 50%;
+        box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.7);
+    }
+    .menu ul a {
+        display: block;
+        text-align: left;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .menu-icon {
+        width: 2.5rem;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        cursor: pointer;
+    }
+    #menuToggle:checked~ul {
+        max-height: 350px;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .mobile-nav {
+        margin-bottom: 4rem;
+    }
+    .container {
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    .left-side {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-radius: 0;
+    }
+    .right-side {
+        max-width: 90%;
+        border-bottom-left-radius: 1.5rem;
+        padding: 0.5rem 3rem 3rem 2rem;
+        border-radius: 0;
+    }
+    .expire-cvc {
+        flex-flow: column;
+    }
+    .exp-text {
+        justify-items: flex-start;
+    }
+}

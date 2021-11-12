@@ -1,0 +1,19 @@
+.outlet-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
+.outlet-header-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #D9E3EC;
+}
+.outlet-header {
+	font-size: xx-large;
+	color: var(--main-black);
+}
+.outlet-text {
+	padding: 0.5rem 1rem 0.5rem 1rem;
+}

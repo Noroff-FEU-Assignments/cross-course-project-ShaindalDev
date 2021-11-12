@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Shopping cart for RainyDays" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/mediaqueries.css" rel="stylesheet" />
+    <link href="../css/cart.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0dc149767b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rainydays | Shopping cart</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo-desktop">
+          <a href="../index.html">
+            <img
+              class="logo-lg"
+              src="../images/RainyDays_Logo.png"
+              alt="Logo for company RainyDays"
+            />
+          </a>
+        </div>
+        <div class="logo-mobile">
+          <a href="../index.html">
+            <img
+              class="logo-sm"
+              src="../images/RainyDays_Logo.png"
+              alt="Logo for company RainyDays"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="nav-container">
+          <nav class="menu">
+            <input type="checkbox" id="menuToggle" />
+            <label for="menuToggle" class="menu-icon"
+              ><i class="fa fa-bars"></i
+            ></label>
+            <ul>
+              <li>
+                <a href="women.html">Women</a>
+              </li>
+              <li>
+                <a href="men.html">Men</a>
+              </li>
+              <li>
+                <a href="outlet.html">Outlet</a>
+              </li>
+              <li>
+                <a href="about-contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="search-container">
+          <div class="search-col"></div>
+          <div class="search-here">
+            <div class="searchbtn"><i class="fas fa-search"></i></div>
+            <input type="text" class="input-search" placeholder="search here" />
+          </div>
+        </div>
+      </div>
+      <div class="quick-nav">
+        <ul class="nav-secondary">
+          <li>
+            <a href="../index.html">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="account.html">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html">
+              <i class="fas fa-shopping-basket"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="cart-container">
+      <div class="basketcontainer">
+        <div class="items">
+          <div class="shopping-cart">
+            <h1 class="title-cart">Shopping Cart</h1>
+            <h2 class="action">Remove all</h2>
+          </div>
+          <div class="basketitems">
+            <div class="itemcard">
+              <div class="image-box">
+                <img src="../products/jacket1-FP.png" alt="outdoor jacket" style="height: 4rem" />
+              </div>
+              <div class="itemsummary">
+                <h3 class="title-item">Soft-Shell jacket</h3>
+                <h3 class="sizeinfo">XL</h3>
+              </div>
+              <div class="counter">
+                <div class="adjustbtn">+</div>
+                <div class="countsum">1</div>
+                <div class="adjustbtn">-</div>
+              </div>
+              <div class="prices">$199</div>
+            </div>
+            <div class="itemcard">
+              <div class="image-box">
+                <img src="../products/jacket1-FP.png" alt="outdoor jacket" style="height: 4rem" />
+              </div>
+              <div class="itemsummary">
+                <h3 class="title-item">Soft-Shell jacket</h3>
+                <h3 class="sizeinfo">XL</h3>
+              </div>
+              <div class="counter">
+                <div class="adjustbtn">+</div>
+                <div class="countsum">1</div>
+                <div class="adjustbtn">-</div>
+              </div>
+              <div class="prices">$199</div>
+            </div>
+            <div class="itemcard">
+              <div class="image-box">
+                <img src="../products/jacket1-FP.png" alt="outdoor jacket" style="height: 4rem" />
+              </div>
+              <div class="itemsummary">
+                <h3 class="title-item">Soft-Shell jacket</h3>
+                <h3 class="sizeinfo">XL</h3>
+              </div>
+              <div class="counter">
+                <div class="adjustbtn">+</div>
+                <div class="countsum">1</div>
+                <div class="adjustbtn">-</div>
+              </div>
+              <div class="prices">$199</div>
+            </div>
+            <div class="itemcard">
+              <div class="image-box">
+                <img src="../products/jacket1-FP.png" alt="outdoor jacket" style="height: 4rem" />
+              </div>
+              <div class="itemsummary">
+                <h3 class="title-item">Soft-Shell jacket</h3>
+                <h3 class="sizeinfo">XL</h3>
+              </div>
+              <div class="counter">
+                <div class="adjustbtn">+</div>
+                <div class="countsum">1</div>
+                <div class="adjustbtn">-</div>
+              </div>
+              <div class="prices">$199</div>
+            </div>
+            <div class="totalwrapper">
+              <div class="subcontainer">
+                <div class="totalitems">4 items =</div>
+                <div class="subtotal">SubTotal:</div>
+              </div>
+              <div class="amount">$796</div>
+            </div>
+            <div class="checkout-btn">
+              <button class="button"><a href="checkout.html">Checkout</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="mobile-hide">
+        <div class="footer-bottom bob">
+        <div class="contact-us">
+          <a href="about-contact.html"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <h4 class="title">Contact us</h4>
+        </div>
+        <div class="about-us">
+          <a href="about-contact.html"
+            ><i class="fas fa-info-circle"></i
+          ></a>
+          <h4 class="title">About Us</h4>
+        </div>
+        </div>
+        <div class="copyright">
+          <p>&COPY;All rights reserved </p>
+        </div>
+      </div>
+      <div class="desktop-hide">
+        <div class="quick-nav mobile-nav">
+          <ul class="nav-secondary">
+            <li>
+              <a href="../index.html">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="account.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="cart.html"
+                ><i class="fas fa-shopping-basket"></i
+              ></a>
+            </li>
+            <li>
+              <a href="about-contact.html">
+                <i class="fas fa-info"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

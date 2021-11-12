@@ -201,6 +201,8 @@ input::placeholder {
 
 .mobile-hide {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .desktop-hide {
@@ -261,6 +263,7 @@ input::placeholder {
 .bob {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .contact-us,
@@ -285,3 +288,4 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
 }
+

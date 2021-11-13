@@ -30,15 +30,11 @@
 .col-65 {
 	flex: 65%;
 }
-/* if you want lager size uncomment .col-75 */
-/*.col-75 {
-  -ms-flex: 75%; 
-  flex: 75%;
-} */
+
 .col-23,
 .col-48,
 .col-65,
-.col-75 {
+ {
   padding: 0 15px;
 }
 

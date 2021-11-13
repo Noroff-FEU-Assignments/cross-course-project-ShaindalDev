@@ -41,7 +41,7 @@
   }
   
   /* styling for containers */
-  .container {
+  .user-container {
 	padding: 1rem;
 	background: var(--main-whitecolor);
 	border-radius: 0.5rem 0.5rem 0 0;

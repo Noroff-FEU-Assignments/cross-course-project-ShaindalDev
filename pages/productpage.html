@@ -8,10 +8,9 @@
       name="description"
       content="Warm and waterproof womens jacket, theese jackets will keep you warm and dry."
     />
-    <link href="../css/checkoutstyle.css" rel="stylesheet" />
-    <link href="../css/style.css" rel="stylesheet" />
-    <link href="../css/mediaqueries.css" rel="stylesheet" />
-    <link href="../css/productpage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/productpage.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/mediaqueries.css"/>
     <script
       src="https://kit.fontawesome.com/0dc149767b.js"
       crossorigin="anonymous"
@@ -109,18 +108,34 @@
               adventure they go on
             </p>
             <p>$199</p>
+            <label for="size">Choose a size:</label>
+            <input
+              list="sizes"
+              id="size"
+              name="size"
+            />
+            <datalist id="sizes">
+              <option value="Small"></option>
+              <option value="Medium"></option>
+              <option value="Large"></option>
+              <option value="X-Large"></option>
+              <option value="XXL"></option>
+            </datalist>
+
             <label class="buy-btn" for="add-to-cart">Buy</label>
             <input type="checkbox" id="add-to-cart" />
             <section class="cart">
               <h3>Product added to cart</h3>
-			  <hr>
-			  <h4>Hicking Jacket</h4>
+              <hr />
+              <h4>Hicking Jacket</h4>
               <p>
                 Made using fully waterproof<br />
                 Gore tex Shield® outer fabric
               </p>
               <p>$199</p>
-              <button class="button"><a href="checkout.html">Checkout</a></button>
+              <button class="button">
+                <a href="checkout.html">Checkout</a>
+              </button>
             </section>
           </div>
         </div>

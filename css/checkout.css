@@ -1,0 +1,98 @@
+.full-wrap {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1.5rem;
+ 
+}
+.billing,
+.payment-method,
+.checkout-basket {
+	background: var(--main-grey);
+	box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
+	border-radius: .625rem;
+	padding: 0.5rem;
+}
+.expire-container {
+	display: flex;
+}
+.col-23 {
+  width: 18.625rem;
+}
+
+.col-48 {
+  flex: 30%;
+}
+
+.col-65 {
+	flex: 65%;
+}
+/* if you want lager size uncomment .col-75 */
+/*.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+} */
+.col-23,
+.col-48,
+.col-65,
+.col-75 {
+  padding: 0 15px;
+}
+
+.text-input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: var(--main-bluecolor);
+}
+
+/*#id styling goes here */
+#monthyear {
+	width: 4rem;
+}
+#cvc {
+	width: 3rem;
+}
+#show-hide, .col-23 {
+	display: none;
+}
+#show-hide:checked ~ .col-23{
+	display: block;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.exp-cvc {
+	padding-right: 1rem;
+}
+.hide {
+	text-decoration: underline;
+}
+.icon-container {
+  margin-bottom: 1.625rem;
+  font-size: 24px;
+}
+
+.payment-btn {
+	margin: 0.5rem;
+}
+
+a {
+  color: var(--main-bluecolor);
+}
+
+hr {
+  border: .0550rem solid #C7C7C7;
+}
+
+span.price {
+  float: right;
+  color: var(--main-black);
+}
+
+

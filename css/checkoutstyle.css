@@ -7,7 +7,9 @@
   margin: 1.5rem 0rem 1.5625rem 0rem;
   gap: 2rem;
 }
-
+.check-info {
+  font-size: large;
+}
 .left-side {
   background-color: var(--main-whitecolor);
   font-size: xxx-large;
@@ -16,6 +18,10 @@
   box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
   color: var(--main-black);
   max-height: 14rem;
+}
+.shipping-info {
+  background-color: var(--main-whitecolor);
+  font-size: 1rem;
 }
 .thank-you {
   display: flex;

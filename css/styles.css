@@ -3,10 +3,12 @@
   --main-bluecolor: #0a3641;
   --main-whitecolor: #ffffff;
   --main-black: #000;
-  --main-grey: #d9e3ec;
+  --main-grey: #f2f2f2;
+  --main-red: #a60000;
 }
 /* styles for removing all native margins and padding */
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,12 +38,14 @@ p {
 }
 a {
   text-decoration: none;
-  color: var(--main-whitecolor);
 }
 label:hover {
   cursor: pointer;
 }
-/* nav */
+.fa-star-of-life {
+	color: var(--main-red);
+	font-size: 0.650rem;
+}
 .header {
   background-color: var(--main-whitecolor);
   display: flex;
@@ -72,9 +76,7 @@ label:hover {
   flex-direction: column;
   padding-top: 1rem;
 }
-.nav-container {
-  display: block;
-}
+
 /* search bar styling here */
 .search-container {
   display: flex;
@@ -129,6 +131,9 @@ input::placeholder {
   transform: translate(-50%, -50%);
 }
 /* menu and nav styling */
+.nav-container {
+	display: block;
+  }
 .menu {
   display: flex;
   justify-content: space-between;
@@ -185,6 +190,7 @@ input::placeholder {
 .mobile-nav {
   display: none;
 }
+/* classes that is to be hidden */
 .mobile-hide {
   display: flex;
   flex-direction: column;
@@ -221,7 +227,7 @@ input::placeholder {
   font-weight: 400;
   font-size: 1.2rem;
   margin-top: 10px;
-  width: 14rem;
+  width: 16rem;
   letter-spacing: 0.11rem;
   outline: none;
   transition: 0.2s;
@@ -234,7 +240,6 @@ input::placeholder {
 }
 .show {
   color: var(--main-black);
-  text-decoration: underline;
 }
 
 /* footer styling goes here */
@@ -244,7 +249,6 @@ input::placeholder {
   background-color: var(--main-whitecolor);
   border-top: 0.0625rem solid var(--main-black);
   align-items: center;
-  height: 10vh;
 }
 .bob {
   display: flex;

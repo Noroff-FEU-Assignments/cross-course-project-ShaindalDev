@@ -23,9 +23,10 @@
   cursor: pointer;
   border: 0.1rem solid var(--main-black);
   text-align: center;
+
   
 }
- 
+
 #add-to-cart, .cart {
 	display: none;
   }
@@ -62,7 +63,7 @@
   box-shadow: 3px 3px 6px #38373785;
   text-align: center;
 }
-.button:hover {
+.buy-btn:hover {
   transform: scale(1.05) translateY(-3px);
   box-shadow: 3px 3px 6px #38373785;
   cursor: pointer;

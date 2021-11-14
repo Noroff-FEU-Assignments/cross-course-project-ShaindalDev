@@ -35,9 +35,8 @@
 	.col-23 {
 		margin: 3rem 0 2rem 0;
 	  }
-    .jacket-card {
-        width: 70%;
-        display: flex;
+    .jacket-preview {
+        max-width: 90%;
     }
     .jacket-preview {
         max-width: 90%;

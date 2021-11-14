@@ -15,6 +15,7 @@
   border: 0.125rem solid var(--main-black);
   box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem rgba(7, 7, 7, 0.75);
   padding-bottom: 2rem;
+  max-width: 50%;
 }
 #size {
   background-color: var(--main-grey);
@@ -23,8 +24,6 @@
   cursor: pointer;
   border: 0.1rem solid var(--main-black);
   text-align: center;
-
-  
 }
 
 #add-to-cart, .cart {

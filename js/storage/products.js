@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        name: "Product 1",
+        name: "Product hei",
     },
     {
         id: 2,

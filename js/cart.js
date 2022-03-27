@@ -1,16 +1,11 @@
-import { getExistingFavs } from "./utils/favFunctions.js";
-
-const favourites = getExistingFavs();
-
-const productContainer = document.querySelector(".product-container");
-
-if (favourites.length === 0) {
-    productContainer.innerHTML = "No favourites yet";
+function myAlert() {
+    alert("You have added item to cart!");
 }
 
-favourites.forEach((favourite) => {
-    productContainer.innerHTML += `<div class="product">
-                                    <h4>${favourite.name}</h4>
-                                    <i class="fa fa-heart"></i>
-                                </div>`;
-});
+// Function for adjustment in cart //
+function totalClick(click) {
+    const countsum = document.getElementsByClassName('countsum');
+    const sumvalue = parseInt(countsum.innerText) + click;
+    console.log(countsum + click);
+    countsum.innerText = sumvalue;
+}

@@ -8,7 +8,6 @@
 }
 /* styles for removing all native margins and padding */
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,8 +43,8 @@ label:hover {
   cursor: pointer;
 }
 .fa-star-of-life {
-	color: var(--main-red);
-	font-size: 0.650rem;
+  color: var(--main-red);
+  font-size: 0.65rem;
 }
 .header {
   background-color: var(--main-whitecolor);
@@ -133,8 +132,8 @@ input::placeholder {
 }
 /* menu and nav styling */
 .nav-container {
-	display: block;
-  }
+  display: block;
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -240,6 +239,27 @@ input::placeholder {
 }
 .show {
   color: var(--main-black);
+}
+
+.product {
+  margin: 1rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+  min-width: 200px;
+  position: relative;
+}
+
+.product i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+}
+
+.product i.fa {
+  color: darkred;
 }
 
 /* footer styling goes here */

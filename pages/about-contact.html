@@ -8,9 +8,10 @@
       name="description"
       content="Warm and waterproof womens jacket, theese jackets will keep you warm and dry."
     />
-    <link rel="stylesheet" href="../css/about-us.css"/>
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <link rel="stylesheet" href="../css/mediaqueries.css"/>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/about-us.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
     <script
       src="https://kit.fontawesome.com/0dc149767b.js"
       crossorigin="anonymous"
@@ -49,16 +50,24 @@
             ></label>
             <ul>
               <li>
-                <a href="women.html">Women</a>
+                <a href="women.html" aria-label="women's jackets">Women</a>
               </li>
               <li>
-                <a href="men.html">Men</a>
+                <a href="men.html" aria-label="Men's jackets">Men</a>
               </li>
               <li>
-                <a href="outlet.html">Outlet</a>
+                <a
+                  href="outlet.html"
+                  aria-label="Outlet with lower prices on jackets"
+                  >Outlet</a
+                >
               </li>
               <li>
-                <a href="about-contact.html">Contact</a>
+                <a
+                  href="about-contact.html"
+                  aria-label="Contact us and about us page"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -74,17 +83,17 @@
       <div class="quick-nav">
         <ul class="nav-secondary">
           <li>
-            <a href="../index.html">
+            <a href="../index.html" aria-label="Return to home page">
               <i class="fas fa-home"></i>
             </a>
           </li>
           <li>
-            <a href="account.html">
+            <a href="account.html" aria-label="Your account page">
               <i class="fas fa-user"></i>
             </a>
           </li>
           <li>
-            <a href="cart.html">
+            <a href="cart.html" aria-label="Shopping cart page">
               <i class="fas fa-shopping-basket"></i>
             </a>
           </li>
@@ -92,76 +101,136 @@
       </div>
     </header>
     <main>
-        <div class="frida">
+      <div class="frida">
         <div class="contact-header">
-              <h1>Contact us </h1>
-          </div>
-      <section class="both-container">
-        <div class="contact-us-container">
-          <form class="textarea-container">
-              <textarea class="textarea" name="message" rows="10" cols="40" placeholder="Here you can write to us..."></textarea>
-          </form>
-          <button class="button" type="button">Submit</button>
+          <h1>Contact us</h1>
         </div>
-        <h2 class="heading-about">About us</h2>
-        <div class="about-us-container">
-          <p>An online shop selling men's and women’s 
-            rain jackets. They are designed for a range
-            of different outdoor activities such as hiking.
-            We are selling jackets that are mid-range in 
-            price and with great quality and durability.
+        <section class="both-container">
+          <div class="contact-us-container">
+            <section class="contact-form">
+              <h1 class="contactUs-title">Contact us</h1>
+              <form class="write-us" onsubmit="return false">
+                <label for="lastName">Last Name:</label><br />
+                <input
+                  type="text"
+                  placeholder="Enter your last name"
+                  id="lastName"
+                />
+                <br />
+                <label for="firstName">First Name:</label><br />
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  id="firstName"
+                />
+                <br />
+                <label for="email">Email Address:</label><br />
+                <input type="email" placeholder="Enter your email" id="email" />
 
-            We are a medium sized Family Company
-            with base in Sandefjord Norway, we have
-            international shipping within Europe only.
-          </p>
-          <P>Adress: Jacketstreet 469<br> 3200 Sandefjord<br>
-          phone: +47 987 654 32</p>
-          <!--<p>Our visit adress is: Jacketstreet 469 , Sandefjord 3200</p> -->
-        </div>
-      </section>
+                &nbsp;
+                <br /><br />
+                <label for="address">Address:</label><br />
+                <input
+                  type="text"
+                  placeholder="Enter your address"
+                  id="address"
+                />
+                <br />
+                <label for="houseNumber">House Number:</label><br />
+                <input
+                  type="text"
+                  placeholder="House number"
+                  id="houseNumber"
+                />
+                &nbsp;
+                <br /><br />
+                <label for="country">Select your Country:</label><br />
+                <select id="country">
+                  <option disabled selected value>
+                    -- select a country --
+                  </option>
+                  <option value="Narnia">Narnia</option>
+                  <option value="Neverland">Neverland</option>
+                  <option value="Vulcan">Vulcan</option>
+                </select>
+                <br /><br />
+                <br />
+                <label for="question">Enter your question here:</label><br />
+                <textarea id="question" rows="15" cols="50"></textarea>
+                <br /><br />
+              </form>
+            </section>
+            <button onclick="sendContact();" class="button" type="button">
+              Submit
+            </button>
+          </div>
+          <h2 class="heading-about">About us</h2>
+          <div class="about-us-container">
+            <p>
+              An online shop selling men's and women’s rain jackets. They are
+              designed for a range of different outdoor activities such as
+              hiking. We are selling jackets that are mid-range in price and
+              with great quality and durability. We are a medium sized Family
+              Company with base in Sandefjord Norway, we have international
+              shipping within Europe only.
+            </p>
+            <p>
+              Adress: Jacketstreet 469<br />
+              3200 Sandefjord<br />
+              phone: +47 987 654 32
+            </p>
+            <!--<p>Our visit adress is: Jacketstreet 469 , Sandefjord 3200</p> -->
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer">
       <div class="mobile-hide">
         <div class="footer-bottom bob">
-        <div class="contact-us">
-          <a href="about-contact.html"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <h4 class="title">Contact us</h4>
-        </div>
-        <div class="about-us">
-          <a href="about-contact.html"
-            ><i class="fas fa-info-circle"></i
-          ></a>
-          <h4 class="title">About Us</h4>
-        </div>
+          <div class="contact-us">
+            <a
+              href="about-contact.html"
+              aria-label="Contact us and about us page"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <h4 class="title">Contact us</h4>
+          </div>
+          <div class="about-us">
+            <a
+              href="about-contact.html"
+              aria-label="Contact us and about us page"
+              ><i class="fas fa-info-circle"></i
+            ></a>
+            <h4 class="title">About Us</h4>
+          </div>
         </div>
         <div class="copyright">
-          <p>&COPY;All rights reserved </p>
+          <p>&COPY;All rights reserved</p>
         </div>
       </div>
       <div class="desktop-hide">
         <div class="quick-nav mobile-nav">
           <ul class="nav-secondary">
             <li>
-              <a href="../index.html">
+              <a href="../index.html" aria-label="Return to home page">
                 <i class="fas fa-home"></i>
               </a>
             </li>
             <li>
-              <a href="account.html">
+              <a href="account.html" aria-label="Your account page">
                 <i class="fas fa-user"></i>
               </a>
             </li>
             <li>
-              <a href="cart.html"
+              <a href="cart.html" aria-label="Shopping cart page"
                 ><i class="fas fa-shopping-basket"></i
               ></a>
             </li>
             <li>
-              <a href="about-contact.html">
+              <a
+                href="about-contact.html"
+                aria-label="Contact us and about us page"
+              >
                 <i class="fas fa-info"></i>
               </a>
             </li>
@@ -169,5 +238,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

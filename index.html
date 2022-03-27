@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#0a3641"/>
+    <meta name="theme-color" content="#0a3641" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Home page of Rainydays a onlinestore for outdoor and rain jackets, play in the snow with our jackets that will keep you warm"/>
+    <meta
+      name="description"
+      content="Home page of Rainydays a onlinestore for outdoor and rain jackets, play in the snow with our jackets that will keep you warm"
+    />
+    <link href="css/newcarousel.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/mediaqueries.css" rel="stylesheet" />
     <script
@@ -46,16 +50,22 @@
             ></label>
             <ul>
               <li>
-                <a href="pages/women.html">Women</a>
+                <a href="pages/women.html" aria-label="womens jackets">Women</a>
               </li>
               <li>
-                <a href="pages/men.html">Men</a>
+                <a href="pages/men.html" aria-label="mens jackets">Men</a>
               </li>
               <li>
-                <a href="pages/outlet.html">Outlet</a>
+                <a
+                  href="pages/outlet.html"
+                  aria-label="outlet page, lower prices on jackets"
+                  >Outlet</a
+                >
               </li>
               <li>
-                <a href="pages/about-contact.html">Contact</a>
+                <a href="pages/about-contact.html" aria-label="contact us page"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -71,20 +81,20 @@
       <div class="quick-nav">
         <ul class="nav-secondary">
           <li>
-            <a href="index.html">
-            <i class="fas fa-home"></i>
-          </a>
-        </li>
-        <li>
-            <a href="/pages/account.html">
-            <i class="fas fa-user"></i>
-          </a>
-        </li>
-        <li>
-            <a href="/pages/cart.html">
-            <i class="fas fa-shopping-basket"></i>
-          </a>
-        </li>
+            <a href="index.html" aria-label="Return to home page">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/account.html" aria-label="Your account page">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/cart.html" aria-label="Your shopping cart">
+              <i class="fas fa-shopping-basket"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -97,30 +107,112 @@
           />
           <div class="frida">
             <h3>Soft-Shell Jacket</h3>
-            <p>Made using fully waterproof<br>
-            Gore tex Shield® outer fabric</p>
+            <p>
+              Made using fully waterproof<br />
+              Gore tex Shield® outer fabric
+            </p>
             <p>$275</p>
             <a class="show" href="/pages/productpage.html">More info...</a>
             <button class="button">Buy</button>
           </div>
         </div>
         <div class="card">
-          <img src="products/jacket3-FP.png" alt="waterproof Hicking jacket" />
-          <div class="frida">
-            <h3>Hicking-jacket</h3>
-            <p>Made using fully waterproof<br>
-            Gore tex Shield® outer fabric</p>
-            <p>$199</p>
-            <a class="show" href="/pages/productpage.html">More info</a>
-            <button class="button">Buy</button>
+          <!-- carousel container -->
+          <div class="slideshow-container fade">
+            <!-- All info on each slide -->
+            <div class="Containers">
+              <img
+                class="product-image"
+                src="products/jacket2-FP.png"
+                alt=""
+                style="width: 100%"
+              />
+              <button class="button">Add to cart</button>
+              <span class="product-price">$1575</span>
+              <div class="frida">
+                <h3>Rain Jacket</h3>
+                <p>Made using fully waterproof</p>
+                <p>Gore tex Shield® outer fabric</p>
+                <p>$275</p>
+                <label class="buy" for="add-to-cart">Buy</label>
+                <input type="checkbox" class="add-to-cart" />
+                <section class="d-none">
+                  <h3>Soft-Shell Jacket</h3>
+                  <p>waterproof Gore Tex® Soft-Shell jacket</p>
+                  <p>$275</p>
+                  <a href="checkout.html">Go to checkout</a>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="Containers">
+            <img
+              class="product-image"
+              src="products/jacket1-FP.png"
+              alt=""
+              style="width: 100%"
+            />
+            <button class="button">Add to cart</button>
+            <span class="product-price">$1575</span>
+            <div class="frida">
+              <h3>Rain Jacket</h3>
+              <p>Made using fully waterproof</p>
+              <p>Gore tex Shield® outer fabric</p>
+              <p>$275</p>
+              <label class="buy" for="add-to-cart">Buy</label>
+              <input type="checkbox" class="add-to-cart" />
+              <section class="d-none">
+                <h3>Soft-Shell Jacket</h3>
+                <p>waterproof Gore Tex® Soft-Shell jacket</p>
+                <p>$275</p>
+                <a href="checkout.html">Go to checkout</a>
+              </section>
+            </div>
+          </div>
+
+          <div class="Containers">
+            <img
+              class="product-image"
+              src="products/jacket3-FP.png"
+              alt=""
+              style="width: 100%"
+            />
+            <div class="frida">
+              <h3>Rain Jacket</h3>
+              <p>Made using fully waterproof</p>
+              <p>Gore tex Shield® outer fabric</p>
+              <p>$275</p>
+              <label class="buy" for="add-to-cart">Buy</label>
+              <input type="checkbox" class="add-to-cart" />
+              <section class="d-none">
+                <h3>Soft-Shell Jacket</h3>
+                <p>waterproof Gore Tex® Soft-Shell jacket</p>
+                <p>$275</p>
+                <a href="checkout.html">Go to checkout</a>
+              </section>
+            </div>
+          </div>
+          <!-- Back and forward buttons -->
+          <div class="arrowSlider">
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <!-- The page circles -->
+          <div class="pagination" style="text-align: center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
           </div>
         </div>
         <div class="card">
           <img src="products/jacket3-FP.png" alt="waterproof Hicking jacket" />
           <div class="frida">
             <h3>Hicking-jacket</h3>
-            <p>Made using fully waterproof<br>
-            Gore tex Shield® outer fabric</p>
+            <p>
+              Made using fully waterproof<br />
+              Gore tex Shield® outer fabric
+            </p>
             <p>$199</p>
             <a class="show" href="/pages/productpage.html">More info...</a>
             <button class="button">Buy</button>
@@ -131,21 +223,21 @@
     <footer class="footer">
       <div class="mobile-hide">
         <div class="footer-bottom bob">
-        <div class="contact-us">
-          <a href="../pages/about-contact.html"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <h4 class="title">Contact us</h4>
-        </div>
-        <div class="about-us">
-          <a href="../pages/about-contact.html"
-            ><i class="fas fa-info-circle"></i
-          ></a>
-          <h4 class="title">About Us</h4>
-        </div>
+          <div class="contact-us">
+            <a href="../pages/about-contact.html"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <h4 class="title">Contact us</h4>
+          </div>
+          <div class="about-us">
+            <a href="../pages/about-contact.html"
+              ><i class="fas fa-info-circle"></i
+            ></a>
+            <h4 class="title">About Us</h4>
+          </div>
         </div>
         <div class="copyright">
-          <p>&COPY;All rights reserved </p>
+          <p>&COPY;All rights reserved</p>
         </div>
       </div>
       <div class="desktop-hide">
@@ -175,5 +267,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/newslider.js"></script>
   </body>
 </html>

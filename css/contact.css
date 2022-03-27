@@ -1,0 +1,22 @@
+.contact-form {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
+  background-color: var(--main-whitecolor);
+}
+
+#question {
+  width: 100%;
+  height: auto;
+}
+.write-us input::placeholder {
+  color: var(--main-black);
+}
+.contact-form label {
+  color: var(--main-black);
+}
+.contactUs-title {
+  color: var(--main-black);
+}

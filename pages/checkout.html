@@ -44,16 +44,24 @@
             </label>
             <ul>
               <li>
-                <a href="women.html">Women</a>
+                <a href="women.html" aria-label="Women's jackets">Women</a>
               </li>
               <li>
-                <a href="men.html">Men</a>
+                <a href="men.html" aria-label="Men's jackets">Men</a>
               </li>
               <li>
-                <a href="outlet.html">Outlet</a>
+                <a
+                  href="outlet.html"
+                  aria-label="Outlet with lower prices on jackets"
+                  >Outlet</a
+                >
               </li>
               <li>
-                <a href="about-contact.html">Contact</a>
+                <a
+                  href="about-contact.html"
+                  aria-label="Contact us and about us page"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -69,17 +77,17 @@
       <div class="quick-nav">
         <ul class="nav-secondary">
           <li>
-            <a href="../index.html">
+            <a href="../index.html" aria-label="Return to home page">
               <i class="fas fa-home"></i>
             </a>
           </li>
           <li>
-            <a href="account.html">
+            <a href="account.html" aria-label="Your account page">
               <i class="fas fa-user"></i>
             </a>
           </li>
           <li>
-            <a href="cart.html">
+            <a href="cart.html" aria-label="Shopping cart page">
               <i class="fas fa-shopping-basket"></i>
             </a>
           </li>
@@ -89,174 +97,172 @@
     <main>
       <div class="full-wrap">
         <div class="small-wrapper">
-            <div class="col-65">
-              <div class="small-wrapper">
-                <div class="billing">
-                  <div class="col-48">
-                    <h3>Billing Address</h3>
-                    <label for="fullname"
-                      ><i class="fas fa-star-of-life"></i> Full Name</label
-                    >
-                    <input
-                      class="text-input"
-                      type="text"
-                      id="fullname"
-                      name="fullname"
-                      placeholder="Your full name"
-                    />
-                    <label for="email"
-                      ><i class="fas fa-star-of-life"></i> Email</label
-                    >
-                    <input
-                      class="text-input"
-                      type="text"
-                      id="email"
-                      name="email"
-                      placeholder="User@example.com"
-                    />
-                    <label for="address"
-                      ><i class="fas fa-star-of-life"></i> Address</label
-                    >
-                    <input
-                      class="text-input"
-                      type="text"
-                      id="address"
-                      name="address"
-                      placeholder="jacketstreet 469"
-                    />
-                    <label for="city">City</label>
-                    <input
-                      class="text-input"
-                      type="text"
-                      id="city"
-                      name="city"
-                      placeholder="Sandefjord"
-                    />
-                    <div class="small-wrapper">
-                      <div class="col-48">
-                        <label for="province">Province</label>
-                        <input
-                          class="text-input"
-                          type="text"
-                          id="province"
-                          name="province"
-                          placeholder="Vestfold"
-                        />
-                      </div>
-                      <div class="col-48">
-                        <label for="zip"
-                          ><i class="fas fa-star-of-life"></i>Zip</label
-                        >
-                        <input
-                          class="text-input"
-                          type="text"
-                          id="zip"
-                          name="zip"
-                          placeholder="3200"
-                        />
-                      </div>
+          <div class="col-65">
+            <div class="small-wrapper">
+              <div class="billing">
+                <div class="col-48">
+                  <h3>Billing Address</h3>
+                  <label for="fullname"
+                    ><i class="fas fa-star-of-life"></i> Full Name</label
+                  >
+                  <input
+                    class="text-input"
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Your full name"
+                  />
+                  <label for="email"
+                    ><i class="fas fa-star-of-life"></i> Email</label
+                  >
+                  <input
+                    class="text-input"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="User@example.com"
+                  />
+                  <label for="address"
+                    ><i class="fas fa-star-of-life"></i> Address</label
+                  >
+                  <input
+                    class="text-input"
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="jacketstreet 469"
+                  />
+                  <label for="city">City</label>
+                  <input
+                    class="text-input"
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Sandefjord"
+                  />
+                  <div class="small-wrapper">
+                    <div class="col-48">
+                      <label for="province">Province</label>
+                      <input
+                        class="text-input"
+                        type="text"
+                        id="province"
+                        name="province"
+                        placeholder="Vestfold"
+                      />
+                    </div>
+                    <div class="col-48">
+                      <label for="zip"
+                        ><i class="fas fa-star-of-life"></i>Zip</label
+                      >
+                      <input
+                        class="text-input"
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        placeholder="3200"
+                      />
                     </div>
                   </div>
-                  <label>
-                    <input type="checkbox" checked="checked" name="same" />
-                    Shipping address same as billing
-                  </label>
                 </div>
-                <div class="payment-method">
-                  <div class="col-48">
-                    <h3>Payment</h3>
-                    <label for="cardholdername"
-                      ><i class="fas fa-star-of-life"></i>Cardholder name</label
-                    >
-                    <input
-                      class="text-input"
-                      type="text"
-                      id="cardholdername"
-                      name="cardholdername"
-                      placeholder="full name as written on card.."
-                    />
-                    <label for="cardnumber"
-                      ><i class="fas fa-star-of-life"></i>Card number</label
-                    >
-                    <input
-                      class="text-input"
-                      type="text"
-                      id="cardnumber"
-                      name="cardnumber"
-                      placeholder="1234-5678-9123-4567"
-                    />
-                    <div class="small-wrapper">
-                      <div class="expire-container">
-                        <label class="exp-cvc" for="monthyear"
-                          ><i class="fas fa-star-of-life"></i>exp</label
-                        >
-                        <input
-                          class="text-input"
-                          type="text"
-                          id="monthyear"
-                          name="monthyear"
-                          placeholder="08/21"
-                        />
+                <label>
+                  <input type="checkbox" checked="checked" name="same" />
+                  Shipping address same as billing
+                </label>
+              </div>
+              <div class="payment-method">
+                <div class="col-48">
+                  <h3>Payment</h3>
+                  <label for="cardholdername"
+                    ><i class="fas fa-star-of-life"></i>Cardholder name</label
+                  >
+                  <input
+                    class="text-input"
+                    type="text"
+                    id="cardholdername"
+                    name="cardholdername"
+                    placeholder="full name as written on card.."
+                  />
+                  <label for="cardnumber"
+                    ><i class="fas fa-star-of-life"></i>Card number</label
+                  >
+                  <input
+                    class="text-input"
+                    type="text"
+                    id="cardnumber"
+                    name="cardnumber"
+                    placeholder="1234-5678-9123-4567"
+                  />
+                  <div class="small-wrapper">
+                    <div class="expire-container">
+                      <label class="exp-cvc" for="monthyear"
+                        ><i class="fas fa-star-of-life"></i>exp</label
+                      >
+                      <input
+                        class="text-input"
+                        type="text"
+                        id="monthyear"
+                        name="monthyear"
+                        placeholder="08/21"
+                      />
 
-                        <label class="exp-cvc" for="cvc"
-                          ><i class="fas fa-star-of-life"></i>CVC</label
+                      <label class="exp-cvc" for="cvc"
+                        ><i class="fas fa-star-of-life"></i>CVC</label
+                      >
+                      <input
+                        class="text-input"
+                        type="text"
+                        id="cvc"
+                        name="cvc"
+                        placeholder="469"
+                      />
+                    </div>
+                  </div>
+                  <label class="hide" for="show-hide">Show Cart</label>
+                  <input type="checkbox" id="show-hide" />
+                  <div class="col-23">
+                    <div class="checkout-basket">
+                      <h4>
+                        Cart
+                        <span class="price" style="color: black">
+                          <i class="fas fa-shopping-basket"></i>
+                          <b>4</b>
+                        </span>
+                      </h4>
+                      <p>
+                        <a href="#">Hicking Jacket</a>
+                        <span class="price">$199</span>
+                      </p>
+                      <p>
+                        <a href="#">Skiing Jacket</a>
+                        <span class="price">$350</span>
+                      </p>
+                      <p>
+                        <a href="#">Outdoors Jacket</a>
+                        <span class="price">$250</span>
+                      </p>
+                      <p>
+                        <a href="#">Soft-Shell Jacket</a>
+                        <span class="price">$275</span>
+                      </p>
+                      <hr />
+                      <p>
+                        Total
+                        <span class="price" style="color: black"
+                          ><b>$1074</b></span
                         >
-                        <input
-                          class="text-input"
-                          type="text"
-                          id="cvc"
-                          name="cvc"
-                          placeholder="469"
-                        />
-                      </div>
-                    </div>
-                    <label class="hide" for="show-hide">Show Cart</label>
-                    <input type="checkbox" id="show-hide" />
-                    <div class="col-23">
-                      <div class="checkout-basket">
-                        <h4>
-                          Cart
-                          <span class="price" style="color: black">
-                            <i class="fas fa-shopping-basket"></i>
-                            <b>4</b>
-                          </span>
-                        </h4>
-                        <p>
-                          <a href="#">Hicking Jacket</a>
-                          <span class="price">$199</span>
-                        </p>
-                        <p>
-                          <a href="#">Skiing Jacket</a>
-                          <span class="price">$350</span>
-                        </p>
-                        <p>
-                          <a href="#">Outdoors Jacket</a>
-                          <span class="price">$250</span>
-                        </p>
-                        <p>
-                          <a href="#">Soft-Shell Jacket</a>
-                          <span class="price">$275</span>
-                        </p>
-                        <hr />
-                        <p>
-                          Total
-                          <span class="price" style="color: black"
-                            ><b>$1074</b></span
-                          >
-                        </p>
-                      </div>
+                      </p>
                     </div>
                   </div>
-                  <div class="payment-btn"><a href="success.html">
-                    <input
-                      type="submit"
-                      value="Confirm"
-                      class="button"
-                    /></a>
-                  </div>
+                </div>
+                <div class="payment-btn">
+                  <a href="success.html">
+                    <input type="submit" value="Confirm" class="button"
+                  /></a>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </main>
@@ -280,20 +286,25 @@
         <div class="quick-nav mobile-nav">
           <ul class="nav-secondary">
             <li>
-              <a href="../index.html">
+              <a href="../index.html" aria-label="Return to home page">
                 <i class="fas fa-home"></i>
               </a>
             </li>
             <li>
-              <a href="account.html">
+              <a href="account.html" aria-label="Your account page">
                 <i class="fas fa-user"></i>
               </a>
             </li>
             <li>
-              <a href="cart.html"><i class="fas fa-shopping-basket"></i></a>
+              <a href="cart.html" aria-label="Shopping cart page"
+                ><i class="fas fa-shopping-basket"></i
+              ></a>
             </li>
             <li>
-              <a href="about-contact.html">
+              <a
+                href="about-contact.html"
+                aria-label="Contact us and about us page"
+              >
                 <i class="fas fa-info"></i>
               </a>
             </li>

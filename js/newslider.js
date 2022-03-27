@@ -12,9 +12,9 @@ function activeSlide(n) {
 }
 
 function slider(n) {
-  var i;
-  var slides = document.getElementsByClassName("Containers");
-  var dots = document.getElementsByClassName("dots");
+  let i;
+  let slides = document.getElementsByClassName("Containers");
+  let dots = document.getElementsByClassName("dots");
   if (n > slides.length) {activePosition = 1}
   if (n < 1) {activePosition = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -30,8 +30,8 @@ var activePosition = 0;
 slider();
 
 function slider() {
-  var i;
-  var slides = document.getElementsByClassName("Containers");
+  let i;
+  let slides = document.getElementsByClassName("Containers");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }

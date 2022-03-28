@@ -23,7 +23,12 @@ body {
   height: 100vh;
   font-family: Poppins;
   overflow: hidden;
+  background-image: url(../images/pexels-vraj-shah-924831.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: difference;
 }
+
 main {
   flex: 1 0 auto;
   overflow-y: auto;

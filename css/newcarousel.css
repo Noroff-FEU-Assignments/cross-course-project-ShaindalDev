@@ -17,27 +17,28 @@
 .forward {
   cursor: pointer;
   width: auto;
-  padding: 17px;
+  padding: 12px;
   color: var(--main-black);
   font-weight: bold;
   font-size: 19px;
   transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
+  border-radius: 6px 6px 6px 6px;
   user-select: none;
 }
 .arrowSlider {
   text-align: center;
 }
-/* Place the "forward button" to the right */
+
 .forward {
   /* right: 0; */
-  border-radius: 4px 0 0 4px;
+  border-radius: 6px 6px 6px 6px;
 }
 
 /*when the user hovers arrows */
 .Back:hover,
 .forward:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  
 }
 /* The page circles */
 .dots {

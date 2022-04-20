@@ -3,6 +3,12 @@ async function getProducts(url) {
   const response = await fetch(url);
   const products = await response.json();
   console.log(products)
+  const productsContainer = document.querySelector(".product-list");
+const cart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".cart-total");
+
+let cartArray = [];
 // ADD PRODUCTS TO PAGE CONTAINER
   products.forEach(function (product, index) {
   productsContainer.innerHTML += `<div class="items">
@@ -18,22 +24,12 @@ async function getProducts(url) {
       <button type="button" class="btn cart-button" data-product="${product.id}">Add to cart</button>
     </div> `;
 });
-}
-getProducts(baseUrl);
-// import { productArray } from "./storage/products.js";
-const productsContainer = document.querySelector(".product-list");
-const cart = document.querySelector(".cart");
-const cartList = document.querySelector(".cart-list");
-const totalContainer = document.querySelector(".cart-total");
-
-let cartArray = [];
-
 // ADD "BUY BUTTON" FUNCTION
 const buttons = document.querySelectorAll("button");
 buttons.forEach(function (button) {
   button.onclick = function (event) {
     
-    // cartArray.push(event.target.dataset.product);
+    cartArray.push(event.target.dataset.product);
     const itemToAdd = products.find(
       (item) => item.id === event.target.dataset.product
     );
@@ -43,7 +39,6 @@ buttons.forEach(function (button) {
     
   };
 });
-
 // Add Item
 function showCart(cartItems) {
   cart.classList.remove("hidden");
@@ -62,6 +57,22 @@ function showCart(cartItems) {
   });
   totalContainer.innerHTML = `Total: $${total},-`;
 }
+document.getElementById('cart-toggle').onclick = function (event) {
+  if (cartArray.length > 0) {
+    const cart = document.querySelector(".cart");
+    cart.classList.toggle("hidden");
+  } else {
+    alert('Cart is empty, please buy some products first.');
+  }
+};
+}
+getProducts(baseUrl);
+// import { productArray } from "./storage/products.js";
+
+
+
+
+
 
 // Updated Cart
 function shoppingCartUpdated() {
@@ -77,12 +88,3 @@ function quantityUpdated() {
 function removeItem(index) {
 
 }
-
-document.getElementById('cart-toggle').onclick = function (event) {
-  if (cartArray.length > 0) {
-    const cart = document.querySelector(".cart");
-    cart.classList.toggle("hidden");
-  } else {
-    alert('Cart is empty, please buy some products first.');
-  }
-};

@@ -103,7 +103,20 @@
             <h2 class="action">Remove all</h2>
           </div>
           <div class="basketitems">
-            <div class="itemcard">
+            <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column"
+                >QUANTITY</span
+              >
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+              <strong class="cart-total-title">Total</strong>
+              <span class="cart-total-price">$0</span>
+            </div>
+
+            <!-- <div class="itemcard">
               <div class="image-box">
                 <img
                   src="../products/jacket1-FP.png"
@@ -121,8 +134,8 @@
                 <button onClick="totalClick(-1)" class="adjustbtn">-</button>
               </div>
               <div class="prices">$199</div>
-            </div>
-            <div class="itemcard">
+            </div> -->
+            <!-- <div class="itemcard">
               <div class="image-box">
                 <img
                   src="../products/jacket1-FP.png"
@@ -140,8 +153,8 @@
                 <button onClick="totalClick(-1)" class="adjustbtn">-</button>
               </div>
               <div class="prices">$199</div>
-            </div>
-            <div class="itemcard">
+            </div> -->
+            <!-- <div class="itemcard">
               <div class="image-box">
                 <img
                   src="../products/jacket1-FP.png"
@@ -159,35 +172,16 @@
                 <button onClick="totalClick(-1)" class="adjustbtn">-</button>
               </div>
               <div class="prices">$199</div>
-            </div>
-            <div class="itemcard">
-              <div class="image-box">
-                <img
-                  src="../products/jacket1-FP.png"
-                  alt="outdoor jacket"
-                  style="height: 4rem"
-                />
-              </div>
-              <div class="itemsummary">
-                <h3 class="title-item">Soft-Shell jacket</h3>
-                <h3 class="sizeinfo">XL</h3>
-              </div>
-              <div class="counter">
-                <button onClick="totalClick(1)" class="adjustbtn">+</button>
-                <span class="countsum">1</span>
-                <button onClick="totalClick(-1)" class="adjustbtn">-</button>
-              </div>
-              <div class="prices">$199</div>
-            </div>
-            <div class="totalwrapper">
+            </div> -->
+            <!-- <div class="totalwrapper">
               <div class="subcontainer">
                 <div class="totalitems">4 items =</div>
                 <div class="subtotal">SubTotal:</div>
               </div>
               <div class="amount">$796</div>
-            </div>
+            </div> -->
             <div class="checkout-btn">
-              <button class="button">
+              <button class="btn add-to-cart" id="checkout">
                 <a href="checkout.html" aria-label="Checkout page">Checkout</a>
               </button>
             </div>
@@ -249,6 +243,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/cart.js"></script>
+    <script src="../js/shoppingcart.js"></script>
   </body>
 </html>

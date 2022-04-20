@@ -12,6 +12,12 @@
     <link href="css/newcarousel.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/mediaqueries.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0dc149767b.js"
       crossorigin="anonymous"
@@ -70,13 +76,12 @@
             </ul>
           </nav>
         </div>
-        <div class="search-container">
-          <div class="search-col"></div>
-          <div class="search-here">
-            <div class="searchbtn"><i class="fas fa-search"></i></div>
-            <input type="text" class="input-search" placeholder="search here" />
+        <!-- <div class="search-container">
+          <div class="search-field">
+            <i class="fas fa-search icon"></i>
+            <input type="text" class="search-input" placeholder="search here" />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="quick-nav">
         <ul class="nav-secondary">
@@ -91,14 +96,15 @@
             </a>
           </li>
           <li>
-            <a href="/pages/cart.html" aria-label="Your shopping cart">
+            <span class="cart-toggle" id="cart-toggle">
               <i class="fas fa-shopping-basket"></i>
-            </a>
+            </span>
           </li>
         </ul>
       </div>
     </header>
     <main>
+      <section class="product-list"></section>
       <section class="preview-products">
         <div class="card">
           <img
@@ -130,15 +136,7 @@
                 <p>Made using fully waterproof</p>
                 <p>Gore tex Shield® outer fabric</p>
                 <p>$275</p>
-                <button class="button">Add to cart</button>
-                <!-- <label class="buy" for="add-to-cart">Buy</label>
-                <input type="checkbox" class="add-to-cart" /> -->
-                <!-- <section class="d-none">
-                  <h3>Soft-Shell Jacket</h3>
-                  <p>waterproof Gore Tex® Soft-Shell jacket</p>
-                  <p>$275</p>
-                  <a href="checkout.html">Go to checkout</a>
-                </section> -->
+                <button class="btn add-to-cart">Add to cart</button>
               </div>
             </div>
           </div>
@@ -155,15 +153,7 @@
               <p>Made using fully waterproof</p>
               <p>Gore tex Shield® outer fabric</p>
               <p>$275</p>
-              <button class="button">Add to cart</button>
-              <!-- <label class="buy" for="add-to-cart">Buy</label>
-              <input type="checkbox" class="add-to-cart" /> -->
-              <!-- <section class="d-none">
-                <h3>Soft-Shell Jacket</h3>
-                <p>waterproof Gore Tex® Soft-Shell jacket</p>
-                <p>$275</p>
-                <a href="checkout.html">Go to checkout</a>
-              </section> -->
+              <button class="btn add-to-cart">Add to cart</button>
             </div>
           </div>
 
@@ -179,15 +169,7 @@
               <p>Made using fully waterproof</p>
               <p>Gore tex Shield® outer fabric</p>
               <p>$199</p>
-              <button class="button">Add to cart</button>
-              <!-- <label class="buy" for="add-to-cart">Buy</label>
-              <input type="checkbox" class="add-to-cart" /> -->
-              <!-- <section class="d-none">
-                <h3>Soft-Shell Jacket</h3>
-                <p>waterproof Gore Tex® Soft-Shell jacket</p>
-                <p>$199</p>
-                <a href="checkout.html">Go to checkout</a>
-              </section> -->
+              <button class="btn add-to-cart">Add to cart</button>
             </div>
           </div>
           <div class="Containers">
@@ -202,15 +184,7 @@
               <p>Made using fully waterproof</p>
               <p>Gore tex Shield® outer fabric</p>
               <p>$250</p>
-              <button class="button">Add to cart</button>
-              <!-- <label class="buy" for="add-to-cart">Buy</label>
-              <input type="checkbox" class="add-to-cart" /> -->
-              <!-- <section class="d-none">
-                <h3>Soft-Shell Jacket</h3>
-                <p>waterproof Gore Tex® Soft-Shell jacket</p>
-                <p>$250</p>
-                <a href="checkout.html">Go to checkout</a>
-              </section> -->
+              <button class="btn add-to-cart">Add to cart</button>
             </div>
           </div>
           <div class="Containers">
@@ -225,15 +199,7 @@
               <p>Made using fully waterproof</p>
               <p>Gore tex Shield® outer fabric</p>
               <p>$350</p>
-              <button class="button">Add to cart</button>
-              <!-- <label class="buy" for="add-to-cart">Buy</label>
-              <input type="checkbox" class="add-to-cart" /> -->
-              <!-- <section class="d-none">
-                <h3>Soft-Shell Jacket</h3>
-                <p>waterproof Gore Tex® Soft-Shell jacket</p>
-                <p>$350</p>
-                <a href="checkout.html">Go to checkout</a>
-              </section> -->
+              <button class="btn add-to-cart">Add to cart</button>
             </div>
           </div>
           <div class="Containers">
@@ -248,15 +214,7 @@
               <p>Made using fully waterproof</p>
               <p>Gore tex Shield® outer fabric</p>
               <p>$275</p>
-              <button class="button">Add to cart</button>
-              <!-- <label class="buy" for="add-to-cart">Buy</label>
-              <input type="checkbox" class="add-to-cart" /> -->
-              <!-- <section class="d-none">
-                <h3>Soft-Shell Jacket</h3>
-                <p>waterproof Gore Tex® Soft-Shell jacket</p>
-                <p>$275</p>
-                <a href="checkout.html">Go to checkout</a>
-              </section> -->
+              <button class="btn add-to-cart">Add to cart</button>
             </div>
           </div>
           <!-- Back and forward buttons -->
@@ -274,21 +232,32 @@
             <span class="dots" onclick="activeSlide(6)"></span>
           </div>
         </div>
-        <div class="card">
-          <img src="products/jacket3-FP.png" alt="waterproof Hicking jacket" />
+        <!-- <div class="card">
+          <img
+            class="product-image"
+            src="products/jacket3-FP.png"
+            alt="waterproof Hicking jacket"
+          />
           <div class="frida">
-            <h3>Hicking-jacket</h3>
+            <h3 class="item-title">Hicking-jacket</h3>
             <p>
               Made using fully waterproof<br />
               Gore tex Shield® outer fabric
             </p>
-            <p>$199</p>
+            <p class="item-price">$199</p>
             <a class="show" href="/pages/productpage.html">More info...</a>
-            <button class="button">Add to cart</button>
+            <button type="button" class="btn cart-button">Add to cart</button>
           </div>
-        </div>
+        </div> -->
       </section>
     </main>
+    <div class="cart hidden">
+      <div class="cart-list"></div>
+      <div class="cart-checkout">
+        <div class="cart-total"></div>
+        <a href="pages/checkout.html" class="cart-checkout-link">Checkout</a>
+      </div>
+    </div>
     <footer class="footer">
       <div class="mobile-hide">
         <div class="footer-bottom bob">
@@ -323,9 +292,9 @@
               </a>
             </li>
             <li>
-              <a href="pages/cart.html"
-                ><i class="fas fa-shopping-basket"></i
-              ></a>
+              <span class="cart-toggle" id="cart-toggle">
+                <i class="fas fa-shopping-basket"></i>
+              </span>
             </li>
             <li>
               <a href="about-contact.html">
@@ -336,7 +305,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/cart.js"></script>
+    <!-- <script src="js/storage/products.js"></script> -->
+    <script type="module" src="js/cart.js"></script>
     <script src="js/newslider.js"></script>
   </body>
 </html>

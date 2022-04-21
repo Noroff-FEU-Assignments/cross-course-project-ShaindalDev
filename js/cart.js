@@ -45,7 +45,7 @@ function showCart(cartItems) {
   cartList.innerHTML = "";
   let total = 0;
   cartItems.forEach(function (cartElement, index) {
-    total += cartElement.prices.price;
+    total += parseInt(cartElement.prices.price);
     cartList.innerHTML += `
         <div class="cart-item">
           <img class="cart-image" src="${cartElement.images[0].src}" alt="${cartElement.name}">

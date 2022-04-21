@@ -14,7 +14,7 @@ let cartArray = [];
   products.forEach(function (product, index) {
   productsContainer.innerHTML += `<div class="items">
       <h3 class="product-name">${product.name}</h3>
-      <img class="product-image" src="${product.images[0].src}" alt="${product.name}">
+      <a href="../pages/productpage.html?id=${product.id}"><img class="product-image" src="${product.images[0].src}" alt="${product.name}"></a>
       <div class="product-description">
         <p>${product.description}</p>
       </div>
@@ -68,12 +68,12 @@ function onToggleCart(event) {
     alert('Cart is empty, please buy some products first.');
   }
 };
-onToggleCart();
+
 }
 getProducts(baseUrl);
 
 
-// Future improvements that is bein worked on
+// Future improvements that is being worked on
 // import { productArray } from "./storage/products.js";
 // Updated Cart
 function shoppingCartUpdated() {
@@ -89,3 +89,36 @@ function quantityUpdated() {
 function removeItem(index) {
 
 }
+
+// // Get the modal
+// var modal = document.getElementById("myModal");
+
+// // Get the button that opens the modal
+// var moreInfo = document.getElementById("myModalBtn");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+// // When the user clicks the button, open the modal 
+// moreInfo.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
+
+      // <button id="myModalBtn">More info</button>
+      // <div id="myModal class="modal">
+      //   <div class="modalContent">
+      //     <span class="close">&times;</span>
+      //     <p>${product.description}</p>
+      //   </div>
+      // </div>

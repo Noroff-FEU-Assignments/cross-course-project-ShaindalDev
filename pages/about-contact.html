@@ -109,6 +109,7 @@
           <div class="contact-us-container">
             <section class="contact-form">
               <h1 class="contactUs-title">Contact us</h1>
+              <br />
               <form class="write-us" onsubmit="return false">
                 <label for="lastName">Last Name:</label><br />
                 <input
@@ -117,6 +118,7 @@
                   id="lastName"
                 />
                 <br />
+                <br />
                 <label for="firstName">First Name:</label><br />
                 <input
                   type="text"
@@ -124,17 +126,28 @@
                   id="firstName"
                 />
                 <br />
+                <br />
                 <label for="email">Email Address:</label><br />
-                <input type="email" placeholder="Enter your email" id="email" />
-
+                <form action="https://example.com/subscribe" method="POST">
+                  <input
+                    type="email"
+                    pattern="[^@]*@example.com"
+                    title="[first.last]@example.com"
+                    required
+                    placeholder="Enter your email"
+                    id="email"
+                  />
+                </form>
                 &nbsp;
-                <br /><br />
+                <br />
+                <br />
                 <label for="address">Address:</label><br />
                 <input
                   type="text"
                   placeholder="Enter your address"
                   id="address"
                 />
+                <br />
                 <br />
                 <label for="houseNumber">House Number:</label><br />
                 <input

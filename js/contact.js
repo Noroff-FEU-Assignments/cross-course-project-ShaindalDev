@@ -60,6 +60,17 @@ function isValid() {
 	this.question = question;
 	}
    }
+   async function onSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const body = new FormData(form);
+    const valid = form.valid;
+  
+    const response = await fetch(form.action, {
+      method: form.method,
+      body
+    });
+  }
   function sendContact(){
 
 	  if (isValid()) {

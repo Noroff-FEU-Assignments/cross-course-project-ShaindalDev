@@ -328,6 +328,7 @@ label:hover {
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .items {
@@ -527,11 +528,15 @@ label:hover {
 }
 .contact-us,
 .about-us {
+  padding: 10px 0;
   display: flex;
   gap: 0.3125rem;
+  justify-content: center;
+  align-items: center;
 }
 .contact-us,
 .about-us h4 {
+  padding: 5px 0;
   color: var(--main-bluecolor);
   text-decoration: underline;
 }

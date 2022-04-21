@@ -1,5 +1,6 @@
 const baseUrl = "https://johnsen-codes.no/rainyDaysWP/wp-json/wc/store/products"
 async function getProducts(url) {
+
   const response = await fetch(url);
   const products = await response.json();
   console.log(products)
@@ -70,13 +71,10 @@ function onToggleCart(event) {
 onToggleCart();
 }
 getProducts(baseUrl);
+
+
+// Future improvements that is bein worked on
 // import { productArray } from "./storage/products.js";
-
-
-
-
-
-
 // Updated Cart
 function shoppingCartUpdated() {
 

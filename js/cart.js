@@ -57,7 +57,9 @@ function showCart(cartItems) {
   });
   totalContainer.innerHTML = `Total: $${total},-`;
 }
-document.getElementById('cart-toggle').onclick = function (event) {
+const cartButtons = document.querySelectorAll('.cart-toggle');
+cartButtons.forEach(button => button.addEventListener('click', onToggleCart));
+function onToggleCart(event) {
   if (cartArray.length > 0) {
     const cart = document.querySelector(".cart");
     cart.classList.toggle("hidden");
@@ -65,6 +67,7 @@ document.getElementById('cart-toggle').onclick = function (event) {
     alert('Cart is empty, please buy some products first.');
   }
 };
+onToggleCart();
 }
 getProducts(baseUrl);
 // import { productArray } from "./storage/products.js";

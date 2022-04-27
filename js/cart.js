@@ -89,7 +89,7 @@ function quantityUpdated() {
 function removeItem(index) {
 
 }
-
+// inspirational modal approach
 // // Get the modal
 // var modal = document.getElementById("myModal");
 

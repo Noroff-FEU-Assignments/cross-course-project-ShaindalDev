@@ -1,3 +1,4 @@
+//This is for testing only 
 export const productArray = [
     {
       name: "Jackety A",

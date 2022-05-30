@@ -54,19 +54,15 @@ npm run start
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+If you want to contribute to this project just send me a message, and leave me a comment as a referance in your project. Feel free to message me if you want me to view your project where you have used this as a base.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+To contact me there is multiple place to do this.
 
-[My Twitter page](www.twitter.com)
+[My Twitter page](https://twitter.com/Noahlysa)
 
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+[My LinkedIn page](https://www.linkedin.com/in/robin-johnsen-04a226159/)
 
 ## Acknowledgments
 

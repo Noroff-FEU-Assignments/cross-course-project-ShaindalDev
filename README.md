@@ -1,12 +1,12 @@
-# Your project title
+# Rainy Days
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Rainy Days logo](https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-one/master/RainyDays_Logo.png)
 
 A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+A project to create an online shop selling men's and women’s rain jackets. They are designed for a range of different outdoor activities that enriches people's lives.
 
 You can add some bullet points if you'd like to:
 
@@ -18,7 +18,7 @@ You can add some bullet points if you'd like to:
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
+- [javascript.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com)
 
 ## Getting Started

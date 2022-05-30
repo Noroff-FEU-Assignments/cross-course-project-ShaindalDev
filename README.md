@@ -65,7 +65,3 @@ To contact me there is multiple place to do this.
 [My LinkedIn page](https://www.linkedin.com/in/robin-johnsen-04a226159/)
 
 [My page](https://johnsen-codes.no/)
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.

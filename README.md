@@ -18,8 +18,9 @@ You can add some bullet points if you'd like to:
 
 You can list a the tech stack that you've used over here
 
-- [javascript.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- [javascript.js](https://javascript.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Getting Started
 

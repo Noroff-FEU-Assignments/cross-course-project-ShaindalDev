@@ -28,12 +28,12 @@ This is built using:
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+To get started with this all you need to do is clone this repo and open it up in a code editor. There is no dependencies you have to install.
 
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-ShaindalDev
 ```
 
 2. Install the dependencies:

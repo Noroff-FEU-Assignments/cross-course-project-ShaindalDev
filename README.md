@@ -64,7 +64,7 @@ To contact me there is multiple place to do this.
 
 [My LinkedIn page](https://www.linkedin.com/in/robin-johnsen-04a226159/)
 
-[Mypage](https://johnsen-codes.no/)
+[My page](https://johnsen-codes.no/)
 
 ## Acknowledgments
 

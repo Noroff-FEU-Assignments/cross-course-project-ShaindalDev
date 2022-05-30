@@ -8,15 +8,17 @@ A simple overview of the use/purpose of the project.
 
 A project to create an online shop selling men's and women’s rain jackets. They are designed for a range of different outdoor activities that enriches people's lives.
 
-You can add some bullet points if you'd like to:
+The architecture of the project
 
-- List item 1
-- List item 2
-- List item 3
+- Home
+- Account page
+- Products page (outlet, women and mens section)
+- Checkout and cart
+- Contact and about us
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+This is built using:
 
 - [javascript.js](https://javascript.com/)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
